@@ -53,36 +53,3 @@ custom_proxy_group=🌸 (IPLC)url-test`url-test`(专线.+新加坡)`http://www.g
 custom_proxy_group=💥 ADban`select`[]REJECT`[]☀️ DIRECT
 custom_proxy_group=☀️ DIRECT`select`[]DIRECT
 ;设置分组标志位
-
-
-
-
-OVO：
-;设置规则标志位
-surge_ruleset=DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
-surge_ruleset=拦截,rules/NobyDa/Surge/AdRule.list
-surge_ruleset=拦截,rules/ConnersHua/Surge/Ruleset/Hijacking.list
-surge_ruleset=国内媒体,rules/lhie1/Surge3/Domestic.list
-surge_ruleset=Proxy,rules/ConnersHua/Surge/Ruleset/Global.list
-surge_ruleset=DIRECT,rules/ConnersHua/Surge/Ruleset/China.list
-surge_ruleset=DIRECT,rules/NobyDa/Surge/Download.list
-surge_ruleset=DIRECT,[]GEOIP,CN
-surge_ruleset=漏网之鱼,[]FINAL
-;设置规则标志位
-
-
-;设置分组标志位
-custom_proxy_group=Proxy`select`[]1x`[]2x`[]4x`[]8x`[]直连
-custom_proxy_group=1x`select`[]1x test`(1倍)
-custom_proxy_group=2x`select`[]2x test`(2倍)
-custom_proxy_group=4x`select`[]4x test`(4倍)
-custom_proxy_group=8x`select`[]8x test`(8倍)
-custom_proxy_group=国内媒体`select`[]直连`[]Proxy
-custom_proxy_group=漏网之鱼`select`[]Proxy`[]直连
-custom_proxy_group=1x test`url-test`(1倍)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=2x test`url-test`(2倍)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=4x test`url-test`(4倍)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=8x test`url-test`(8倍)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=拦截`select`[]REJECT`[]直连
-custom_proxy_group=直连`select`[]DIRECT
-;设置分组标志位
