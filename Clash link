@@ -2,6 +2,7 @@
 surge_ruleset=DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
 surge_ruleset=💥 ADban,rules/NobyDa/Surge/AdRule.list
 surge_ruleset=💥 ADban,rules/ConnersHua/Surge/Ruleset/Hijacking.list
+surge_ruleset=💥 ADban,https://anti-ad.win/surge.txt
 surge_ruleset=⭐️ Domestic,rules/lhie1/Surge3/Domestic.list
 
 ;微软,steam,暴雪还有一些中国的常用网站都在该列表中,并非爱奇艺和bilibili的台湾站。
