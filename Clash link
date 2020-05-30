@@ -1,5 +1,6 @@
 ;设置规则标志位
 surge_ruleset=DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/Ohhu/my-link/Profiles/DIRECT
 surge_ruleset=💥 ADban,https://raw.githubusercontent.com/NobyDa/Profiles/master/Surge/Ruleset/Advertising.list
 surge_ruleset=💥 ADban,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Hijacking.list
 ;surge_ruleset=💥 ADban,https://anti-ad.win/surge.txt
