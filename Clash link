@@ -1,6 +1,5 @@
 ;设置规则标志位
 surge_ruleset=DIRECT,rules/ConnersHua/Surge/Ruleset/Unbreak.list
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/Ohhu/my-link/Profiles/DIRECT
 surge_ruleset=💥 ADban,https://raw.githubusercontent.com/NobyDa/Profiles/master/Surge/Ruleset/Advertising.list
 surge_ruleset=💥 ADban,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Hijacking.list
 ;surge_ruleset=💥 ADban,https://anti-ad.win/surge.txt
@@ -17,6 +16,7 @@ surge_ruleset=🌟 GlobalMedia,https://raw.githubusercontent.com/ConnersHua/Prof
 
 surge_ruleset=⚡️ Google,rules/ConnersHua/Surge/Ruleset/Google.list
 surge_ruleset=💧 Telegram,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list
+surge_ruleset=🍭 Proxy,https://raw.githubusercontent.com/Ohhu/my-link/Profiles/Proxy
 surge_ruleset=🍭 Proxy,rules/ConnersHua/Surge/Ruleset/Global.list
 
 ;ins,pixiv,telegram,google,github等都在该列表中
