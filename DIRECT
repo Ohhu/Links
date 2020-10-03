@@ -3,6 +3,9 @@
 # ConnerHua
 # https://github.com/ConnersHua/Profiles/blob/master/Surge/Ruleset/Unbreak.list
 
+# 判断域名：DOMAIN
+# 域名后缀：DOMAIN-SUFFIX
+# 关键词：KEYWORD
 
 # > pdawiki
 
@@ -10,3 +13,6 @@
 
 # > get_vip
 DOMAIN,asp.trccc.net
+
+# > deepl 翻译
+DOMAIN-SUFFIX,deepl.com
