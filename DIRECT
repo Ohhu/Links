@@ -18,3 +18,6 @@ DOMAIN-SUFFIX,deepl.com
 
 # > regex101
 DOMAIN-SUFFIX,regex101.com
+
+# > nfmovies
+DOMAIN-SUFFIX,nfmovies.com
