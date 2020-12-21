@@ -8,7 +8,10 @@ surge_ruleset=💥 ADban,https://raw.githubusercontent.com/ConnersHua/Profiles/m
 ;Github:https://github.com/privacy-protection-tools/anti-AD
 ;surge_ruleset=💥 ADban,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt
 
-surge_ruleset=⭐️ Domestic,rules/lhie1/Surge3/Domestic.list
+surge_ruleset=⛅️ Taiwan,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Bilibili.list
+surge_ruleset=⛅️ Taiwan,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/iQiyi.list
+
+surge_ruleset=⭐️ Domestic,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list
 
 ;微软,steam,暴雪还有一些中国的常用网站都在该列表中,并非爱奇艺和bilibili的台湾站。
 ;https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list
@@ -42,6 +45,7 @@ custom_proxy_group=💧 Telegram`select`[]🌸 Singapore`[]🌸 Singapore(IPLC)`
 custom_proxy_group=⚡️ Google`select`[]💐 HongKong(IPLC)`[]💐 HongKong`[]🌼 U.S.(IPLC)`[]🌸 Singapore(IPLC)`[]🍭 Proxy`(专线.+香港|专线.+美国)
 custom_proxy_group=✨ YouTube`select`[]💐 HongKong`[]🌸 Singapore`[]🌼 U.S.`[]🍭 Proxy`(中继.+上海|中继.+香港)`[]☀️ DIRECT
 custom_proxy_group=🌟 GlobalMedia`select`[]💐 HongKong`[]🌸 Singapore`[]🌼 U.S.`[]🍭 Proxy`[]☀️ DIRECT
+custom_proxy_group=⛅️ Taiwan`select`[]☀️ DIRECT`[]💐 HongKong`[]🍭 Proxy`(中继.+香港)`(中继.+台湾)
 custom_proxy_group=⭐️ Domestic`select`[]☀️ DIRECT`[]🍭 Proxy
 custom_proxy_group=☄️ Others`select`[]🍭 Proxy`[]☀️ DIRECT
 custom_proxy_group=🌼 U.S.`select`[]🌼 url-test`(中继.+美国)
