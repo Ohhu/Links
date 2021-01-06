@@ -40,7 +40,7 @@ surge_ruleset=☄️ Others,[]MATCH
 ;设置规则标志位
 
 ;设置分组标志位
-custom_proxy_group=🍭 Proxy`select`[]💐 HongKong`[]💐 HongKong(IPLC)`[]🌸 Singapore`[]🌸 Singapore(IPLC)`[]🌼 U.S.`[]🌼 U.S.(IPLC)`[]🌻 Japan`[]☀️ DIRECT`(专线.+→ (?!香港)|中继.+→ (?!香港|新加坡|美国|日本))
+custom_proxy_group=🍭 Proxy`select`[]💐 HongKong`[]💐 HongKong(IPLC)`[]🌸 Singapore`[]🌸 Singapore(IPLC)`[]🌼 U.S.`[]🌼 U.S.(IPLC)`[]🌻 Japan`[]☀️ DIRECT`(专线\s+(?!香港)|中继\s+(?!香港|新加坡|美国|日本))
 custom_proxy_group=💧 Telegram`select`[]🌸 Singapore`[]🌸 Singapore(IPLC)`[]🍭 Proxy`(中继.+新加坡)`[]☀️ DIRECT
 custom_proxy_group=⚡️ Google`select`[]💐 HongKong(IPLC)`[]💐 HongKong`[]🌼 U.S.(IPLC)`[]🌸 Singapore(IPLC)`[]🍭 Proxy`(专线.+香港|专线.+美国)
 custom_proxy_group=✨ YouTube`select`[]💐 HongKong`[]🌸 Singapore`[]🌼 U.S.`[]🍭 Proxy`(中继.+上海|中继.+香港)`[]☀️ DIRECT
