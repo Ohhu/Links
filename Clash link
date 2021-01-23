@@ -2,12 +2,16 @@
 
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+
+
 ruleset=DIRECT,https://raw.githubusercontent.com/Ohhu/my-link/Profiles/DIRECT
+ruleset=🍭 Proxy,https://raw.githubusercontent.com/Ohhu/my-link/Profiles/Proxy
 
 
 ruleset=💥 ADban,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ruleset=💥 ADban,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 ruleset=💥 ADban,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Hijacking.list
+
 
 ;Github:https://github.com/privacy-protection-tools/anti-AD
 ;ruleset=💥 ADban,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt
@@ -38,7 +42,7 @@ ruleset=⚡️ Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/C
 ruleset=💧 Telegram,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
 
 
-ruleset=🍭 Proxy,https://raw.githubusercontent.com/Ohhu/my-link/Profiles/Proxy
+
 ruleset=🍭 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 ;ins,pixiv,telegram,google,github等都在该列表中
 
