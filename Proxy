@@ -14,7 +14,11 @@ DOMAIN,www.pdawiki.com
 # > boss
 DOMAIN,www.zhipin.com
 
-# > GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
+# > GooglePlay下载
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+
+# > 谷歌中国服务（services.googleapis.cn）
+DOMAIN-SUFFIX,services.googleapis.cn
 IP-CIDR,120.232.181.162/32,no-resolve
 IP-CIDR,120.241.147.226/32,no-resolve
 IP-CIDR,120.253.253.226/32,no-resolve
