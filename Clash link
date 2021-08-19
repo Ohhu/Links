@@ -23,6 +23,8 @@ ruleset=⛅️ Taiwan,https://raw.githubusercontent.com/lhie1/Rules/master/Surge
 
 
 ruleset=⭐️ Domestic,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list
+ruleset=⭐️ Domestic,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+ruleset=⭐️ Domestic,
 ;微软,steam,暴雪还有一些中国的常用网站都在该列表中,并非爱奇艺和bilibili的台湾站。
 
 
