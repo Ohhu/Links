@@ -59,7 +59,8 @@ ruleset=☄️ Others,[]MATCH
 
 
 ;设置分组标志位
-custom_proxy_group=🍭 Proxy`select`[]💐 HongKong`[]💐 HongKong(IPLC)`[]🌸 Singapore`[]🌸 Singapore(IPLC)`[]🌼 U.S.`[]🌼 U.S.(IPLC)`[]🌻 Japan`[]☀️ DIRECT`(专线\s+(?!香港)|中继\s+(?!香港|新加坡|美国|日本))
+custom_proxy_group=🍭 Proxy`select`[]💐 HongKong`[]💐 HongKong(IPLC)`[]🌸 Singapore`[]🌸 Singapore(IPLC)`[]🌼 U.S.`[]🌼 U.S.(IPLC)`[]☀️ DIRECT`(专线\s+(?!香港)|中继\s+(?!香港|新加坡|美国|日本))
+;custom_proxy_group=🍭 Proxy`select`[]💐 HongKong`[]💐 HongKong(IPLC)`[]🌸 Singapore`[]🌸 Singapore(IPLC)`[]🌼 U.S.`[]🌼 U.S.(IPLC)`[]🌻 Japan`[]☀️ DIRECT`(专线\s+(?!香港)|中继\s+(?!香港|新加坡|美国|日本))
 custom_proxy_group=💧 Telegram`select`[]🌸 Singapore`[]🌸 Singapore(IPLC)`[]🍭 Proxy`(中继.+新加坡)`[]☀️ DIRECT
 custom_proxy_group=⚡️ Google`select`[]💐 HongKong(IPLC)`[]💐 HongKong`[]🌼 U.S.(IPLC)`[]🌸 Singapore(IPLC)`[]🍭 Proxy`(专线.+香港|专线.+美国)
 custom_proxy_group=✨ YouTube`select`[]💐 HongKong`[]🌸 Singapore`[]🌼 U.S.`[]🍭 Proxy`(中继.+上海|中继.+香港)`[]☀️ DIRECT
@@ -68,14 +69,14 @@ custom_proxy_group=⛅️ Taiwan`select`[]☀️ DIRECT`[]💐 HongKong`[]🍭 P
 custom_proxy_group=⭐️ Domestic`select`[]☀️ DIRECT`[]🍭 Proxy
 custom_proxy_group=☄️ Others`select`[]🍭 Proxy`[]☀️ DIRECT
 custom_proxy_group=🌼 U.S.`select`[]🌼 url-test`(中继.+美国)
-custom_proxy_group=🌻 Japan`select`[]🌻 url-test`(中继.+日本)
+;custom_proxy_group=🌻 Japan`select`[]🌻 url-test`(中继.+日本)
 custom_proxy_group=💐 HongKong`select`[]💐 url-test`(中继.+香港)
 custom_proxy_group=🌸 Singapore`select`[]🌸 url-test`(中继.+新加坡)
 custom_proxy_group=🌼 U.S.(IPLC)`select`[]🌼 (IPLC)url-test`(专线.+美国)
 custom_proxy_group=💐 HongKong(IPLC)`select`[]💐 (IPLC)url-test`(专线.+香港)
 custom_proxy_group=🌸 Singapore(IPLC)`select`[]🌸 (IPLC)url-test`(专线.+新加坡)
 custom_proxy_group=🌼 url-test`url-test`(中继.+美国)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=🌻 url-test`url-test`(中继.+日本)`http://www.gstatic.com/generate_204`400
+;custom_proxy_group=🌻 url-test`url-test`(中继.+日本)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=💐 url-test`url-test`(中继.+香港)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=🌸 url-test`url-test`(中继.+新加坡)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=🌼 (IPLC)url-test`url-test`(专线.+美国)`http://www.gstatic.com/generate_204`400
