@@ -91,5 +91,4 @@ custom_proxy_group=💐 url-test`url-test`(中继.+香港)`http://www.gstatic.co
 custom_proxy_group=🌸 url-test`url-test`(中继.+新加坡)`http://www.gstatic.com/generate_204`400
 
 custom_proxy_group=💥 ADban`select`[]REJECT`[]☀️ DIRECT
-custom_proxy_group=☀️ DIRECT`select`[]DIRECT`[]🍭 Proxy
-;设置分组标志位
+custom_proxy_group=☀️ DIRECT`select`[]DIRECT
