@@ -66,7 +66,7 @@ custom_proxy_group=💧 Telegram`select`[]🌸 Singapore(IPLC)`[]🍭 Proxy`(专
 custom_proxy_group=⚡️ Google`select`[]💐 HongKong(IPLC)`[]🌼 U.S.(IPLC)`[]🌸 Singapore(IPLC)`[]🌻 Japan(IPLC)`[]🍭 Proxy
 custom_proxy_group=✨ YouTube`select`[]💐 HongKong(IPLC)`[]🌼 U.S.(IPLC)`[]🌸 Singapore(IPLC)`[]🌻 Japan(IPLC)`[]🍭 Proxy`[]☀️ DIRECT
 
-custom_proxy_group=🌟 GlobalMedia`select`[]💐 HongKong`[]🌸 Singapore`[]🌼 U.S.`[]🍭 Proxy`[]☀️ DIRECT
+custom_proxy_group=🌟 GlobalMedia`select`[]🍭 Proxy`[]💐 HongKong`[]🌸 Singapore`[]🌼 U.S.`[]☀️ DIRECT
 ;custom_proxy_group=⛅️ Taiwan`select`[]☀️ DIRECT`[]💐 HongKong`[]🍭 Proxy`(中继.+香港)`(中继.+台湾)
 
 custom_proxy_group=⭐️ Domestic`select`[]☀️ DIRECT`[]🍭 Proxy
