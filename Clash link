@@ -1,5 +1,4 @@
 ;设置规则标志位
-
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 
@@ -10,7 +9,6 @@ ruleset=🍭 Proxy,https://raw.githubusercontent.com/Ohhu/my-link/Profiles/Proxy
 
 ruleset=💥 ADban,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 ruleset=💥 ADban,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-;ruleset=💥 ADban,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Hijacking.list
 
 
 ;Github:https://github.com/privacy-protection-tools/anti-AD
@@ -22,29 +20,21 @@ ruleset=💥 ADban,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clas
 ;ruleset=⛅️ Taiwan,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/iQiyi.list
 
 
-ruleset=⭐️ Domestic,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list
-ruleset=⭐️ Domestic,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
-ruleset=⭐️ Domestic,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+;ruleset=⭐️ Domestic,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+;ruleset=⭐️ Domestic,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
 ;微软,steam,暴雪还有一些中国的常用网站都在该列表中,并非爱奇艺和bilibili的台湾站。
 
 
 ruleset=✨ YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
-
-
 ruleset=🌟 GlobalMedia,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-;国外音乐视频站
+;国外音乐视频站；包含YouTube，因此YouTube分组需放上一级
 
 
 ;ruleset=💫 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
 
 
 ruleset=⚡️ Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
-
-
 ruleset=💧 Telegram,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-
-
-
 ruleset=🍭 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 ;ins,pixiv,telegram,google,github等都在该列表中
 
@@ -65,11 +55,9 @@ custom_proxy_group=💧 Telegram`select`[]🌸 Singapore(IPLC)`[]🍭 Proxy`(专
 ;custom_proxy_group=⚡️ Google`select`[]💐 HongKong(IPLC)`[]🌼 U.S.(IPLC)`[]🌸 Singapore(IPLC)`[]🌻 Japan(IPLC)`[]🍭 Proxy`(专线.+香港|专线.+美国|专线.+日本)
 custom_proxy_group=⚡️ Google`select`[]💐 HongKong(IPLC)`[]🌼 U.S.(IPLC)`[]🌸 Singapore(IPLC)`[]🌻 Japan(IPLC)`[]🍭 Proxy
 custom_proxy_group=✨ YouTube`select`[]💐 HongKong(IPLC)`[]🌼 U.S.(IPLC)`[]🌸 Singapore(IPLC)`[]🌻 Japan(IPLC)`[]🍭 Proxy`[]☀️ DIRECT
-
 custom_proxy_group=🌟 GlobalMedia`select`[]🍭 Proxy`[]💐 HongKong`[]🌸 Singapore`[]🌼 U.S.`[]☀️ DIRECT
 ;custom_proxy_group=⛅️ Taiwan`select`[]☀️ DIRECT`[]💐 HongKong`[]🍭 Proxy`(中继.+香港)`(中继.+台湾)
-
-custom_proxy_group=⭐️ Domestic`select`[]☀️ DIRECT`[]🍭 Proxy
+;custom_proxy_group=⭐️ Domestic`select`[]☀️ DIRECT`[]🍭 Proxy
 custom_proxy_group=☄️ Others`select`[]🍭 Proxy`[]☀️ DIRECT
 
 custom_proxy_group=🌼 U.S.(IPLC)`select`[]🌼 (IPLC)url-test`(专线.+美国)
