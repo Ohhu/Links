@@ -10,12 +10,6 @@
 # > pdawiki
 # DOMAIN,www.pdawiki.com
 
-# > get_vip
-DOMAIN,asp.trccc.net
-
-# > deepl 翻译
-DOMAIN-SUFFIX,deepl.com
-
 # > regex101
 DOMAIN-SUFFIX,regex101.com
 
