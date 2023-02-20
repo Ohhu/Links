@@ -1,0 +1,20 @@
+# Surge -定制自己的规则配置
+# https://medium.com/@scomper/surge-%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E8%A7%84%E5%88%99%E9%85%8D%E7%BD%AE-34a6d74b0434
+# ConnerHua
+# https://github.com/ConnersHua/Profiles/blob/master/Surge/Ruleset/Unbreak.list
+
+# 判断域名：DOMAIN
+# 域名后缀：DOMAIN-SUFFIX
+# 关键词：DOMAIN-KEYWORD
+
+# > pdawiki
+# DOMAIN,www.pdawiki.com
+
+# > regex101
+DOMAIN-SUFFIX,regex101.com
+
+# > nfmovies
+DOMAIN-SUFFIX,nfmovies.com
+
+# > synology
+DOMAIN-KEYWORD,synology
