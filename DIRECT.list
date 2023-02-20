@@ -5,7 +5,7 @@
 
 # 判断域名：DOMAIN
 # 域名后缀：DOMAIN-SUFFIX
-# 关键词：KEYWORD
+# 关键词：DOMAIN-KEYWORD
 
 # > pdawiki
 # DOMAIN,www.pdawiki.com
@@ -17,4 +17,4 @@ DOMAIN-SUFFIX,regex101.com
 DOMAIN-SUFFIX,nfmovies.com
 
 # > synology
-KEYWORD,synology
+DOMAIN-KEYWORD,synology
