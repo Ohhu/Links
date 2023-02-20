@@ -7,6 +7,9 @@
 # 域名后缀：DOMAIN-SUFFIX
 # 关键词：DOMAIN-KEYWORD
 
+# > synology
+DOMAIN-KEYWORD,synology
+
 # > pdawiki
 # DOMAIN,www.pdawiki.com
 
@@ -15,6 +18,3 @@ DOMAIN-SUFFIX,regex101.com
 
 # > nfmovies
 DOMAIN-SUFFIX,nfmovies.com
-
-# > synology
-DOMAIN-KEYWORD,synology
