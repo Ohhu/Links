@@ -8,6 +8,9 @@
 # 域名后缀：DOMAIN-SUFFIX
 # 关键词：KEYWORD
 
+# > docker
+DOMAIN-KEYWORD,docker
+
 # > pdawiki
 DOMAIN,www.pdawiki.com
 
