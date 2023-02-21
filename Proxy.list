@@ -8,8 +8,12 @@
 # 域名后缀：DOMAIN-SUFFIX
 # 关键词：KEYWORD
 
-# > docker
+# > Docker
 DOMAIN-KEYWORD,docker
+
+# > OpenAI
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,ai.com
 
 # > pdawiki
 DOMAIN,www.pdawiki.com
