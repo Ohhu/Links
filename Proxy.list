@@ -15,6 +15,9 @@ DOMAIN-KEYWORD,docker
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,ai.com
 
+# > Deepl
+DOMAIN-SUFFIX,deepl.com
+
 # > pdawiki
 DOMAIN,www.pdawiki.com
 
