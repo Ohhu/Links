@@ -12,9 +12,9 @@
 DOMAIN-KEYWORD,docker
 
 # > OpenAI
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,ai.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
+# DOMAIN-SUFFIX,openai.com
+# DOMAIN-SUFFIX,ai.com
+# DOMAIN-SUFFIX,challenges.cloudflare.com
 
 # > Bing
 DOMAIN-SUFFIX,bingapis.com
