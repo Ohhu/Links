@@ -17,6 +17,7 @@ DOMAIN-KEYWORD,docker
 # DOMAIN-SUFFIX,challenges.cloudflare.com
 
 # > Bing
+DOMAIN-KEYWORD,bing
 DOMAIN-SUFFIX,bingapis.com
 
 # > Deepl
