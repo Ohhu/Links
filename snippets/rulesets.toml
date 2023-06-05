@@ -60,8 +60,8 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Downlo
 
 [[rulesets]]
 group = "DIRECT"
-ruleset = []GEOIP,CN
+ruleset = "[]GEOIP,CN"
 
 [[rulesets]]
 group = "️☄️ Others"
-ruleset = []MATCH
+ruleset = "[]MATCH"
