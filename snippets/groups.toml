@@ -6,8 +6,7 @@ rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🏵 Singapore', '[]🌹 U.S.', '
 [[custom_groups]]
 name = '💧 Telegram'
 type = "select"
-rule = ['[]🏵 Singapore','[]💐 HongKong','[]🍀 Taiwan','[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT'
-]
+rule = ['[]🏵 Singapore','[]💐 HongKong','[]🍀 Taiwan','[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
 
 [[custom_groups]]
 name = '🏖 OpenAI'
