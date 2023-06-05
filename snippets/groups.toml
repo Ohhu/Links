@@ -11,7 +11,7 @@ rule = ["[]🏵 Singapore", "[]💐 HongKong", "[]🍀 Taiwan", "[]🍭 Proxy", 
 [[custom_groups]]
 name = "🏖 OpenAI"
 type = "select"
-rule = ["[]🏵 Singapore", "[]🌹 U.S.", "[]🌸 Japan", "[]🍭 Proxy", "(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$]$)"]
+rule = ["[]🏵 Singapore", "[]🌹 U.S.", "[]🌸 Japan", "[]🍭 Proxy", "(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)"]
 
 [[custom_groups]]
 name = "⚡️ Google"
@@ -36,7 +36,7 @@ rule = ["[]🍭 Proxy", "[]☀️ DIRECT", "(^[^1-9].*)"]
 [[custom_groups]]
 name = "🌹 U.S."
 type = "select"
-rule = ["[]🌹 url-test", "(美国.*?[x\d\)]$|USA.*?[x\d\)]$]$)"]
+rule = ["[]🌹 url-test", "(美国.*?[x\d\)]$|USA.*?[x\d\)]$)"]
 
 [[custom_groups]]
 name = "💐 HongKong"
@@ -46,7 +46,7 @@ rule = ["[]💐 url-test", "(香港.*?[x\d\)]$|HK.*?[x\d\)]$)"]
 [[custom_groups]]
 name = "🍀 Taiwan"
 type = "select"
-rule = ["[]🍀 url-test", "(台湾.*?[x\d\)]$|TW.*?[x\d\)]$]$)"]
+rule = ["[]🍀 url-test", "(台湾.*?[x\d\)]$|TW.*?[x\d\)]$)"]
 
 [[custom_groups]]
 name = "🏵 Singapore"
@@ -56,12 +56,12 @@ rule = ["[]🏵 url-test", "(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)"]
 [[custom_groups]]
 name = "🌸 Japan"
 type = "select"
-rule = ["[]🌸 url-test", "(日本.*?[x\d\)]$|JP.*?[x\d\)]$]$)"]
+rule = ["[]🌸 url-test", "(日本.*?[x\d\)]$|JP.*?[x\d\)]$)"]
 
 [[custom_groups]]
 name = "🌹 url-test"
 type = "url-test"
-rule = ["(美国.*?[x\d\)]$|USA.*?[x\d\)]$]$)"]
+rule = ["(美国.*?[x\d\)]$|USA.*?[x\d\)]$)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 400
 
@@ -75,7 +75,7 @@ interval = 400
 [[custom_groups]]
 name = "🍀 url-test"
 type = "url-test"
-rule = ["(台湾.*?[x\d\)]$|TW.*?[x\d\)]$]$)"]
+rule = ["(台湾.*?[x\d\)]$|TW.*?[x\d\)]$)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 400
 
@@ -89,7 +89,7 @@ interval = 400
 [[custom_groups]]
 name = "🌸 url-test"
 type = "url-test"
-rule = ["(日本.*?[x\d\)]$|JP.*?[x\d\)]$]$)"]
+rule = ["(日本.*?[x\d\)]$|JP.*?[x\d\)]$)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 400
 
