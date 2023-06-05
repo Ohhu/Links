@@ -29,7 +29,7 @@ type = "select"
 rule = ['[]🍭 Proxy', '[]☀️ DIRECT', '(^[^1-9].*)']
 
 [[custom_groups]]
-name = '☄️ Others'
+name = '🌎 Others'
 type = "select"
 rule = ['[]🍭 Proxy', '[]☀️ DIRECT', '(^[^1-9].*)']
 
