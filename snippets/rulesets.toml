@@ -1,6 +1,6 @@
 [[rulesets]]
 group = "DIRECT"
-ruleset = "https://raw.githubusercontent.com/Ohhu/Links/Profiles/DIRECT.list"
+ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/DIRECT.list"
 
 [[rulesets]]
 group = "DIRECT"
@@ -20,7 +20,7 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanPro
 
 [[rulesets]]
 group = "🍭 Proxy"
-ruleset = "https://raw.githubusercontent.com/Ohhu/Links/Profiles/Proxy.list"
+ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/Proxy.list"
 
 [[rulesets]]
 group = "🏖 OpenAI"
