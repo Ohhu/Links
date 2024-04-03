@@ -1,12 +1,12 @@
 [[custom_groups]]
 name = '💧 Telegram'
 type = "select"
-rule = ['[]🏵 Singapore','[]💐 HongKong','[]🍀 Taiwan','[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
+rule = ['[]🏵 Singapore', '[]💐 HongKong', '[]🌸 Japan', '[]🍀 Taiwan','[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
 
 [[custom_groups]]
 name = '🏖 OpenAI'
 type = "select"
-rule = ['[]🏵 Singapore', '[]🌹 U.S.', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
+rule = ['[]🏵 Singapore', '[]🌹 U.S.', '[]🌸 Japan', '[]🍀 Taiwan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
 
 [[custom_groups]]
 name = '⚡️ Google'
@@ -58,10 +58,10 @@ name = '🌸 Japan'
 type = "select"
 rule = ['[]🌸 url-test', '(日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
 
-[[custom_groups]]
-name = '🌐 Cloudflare'
-type = "select"
-rule = ['[]🌐 url-test', '([\w-]+WARP-\d*$)']
+# [[custom_groups]]
+# name = '🌐 Cloudflare'
+# type = "select"
+# rule = ['[]🌐 url-test', '([\w-]+WARP-\d*$)']
 
 [[custom_groups]]
 name = '🌹 url-test'
@@ -99,12 +99,12 @@ url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 
-[[custom_groups]]
-name = '🌐 url-test'
-type = "url-test"
-rule = ['([\w-]+WARP-\d*$)']
-url = 'http://www.gstatic.com/generate_204'
-interval = 400
+# [[custom_groups]]
+# name = '🌐 url-test'
+# type = "url-test"
+# rule = ['([\w-]+WARP-\d*$)']
+# url = 'http://www.gstatic.com/generate_204'
+# interval = 400
 
 [[custom_groups]]
 name = '💥 ADban'
