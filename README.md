@@ -11,6 +11,5 @@
 
 |配置文件|URL|
 |:--:|:--:|
-|Clish.ini|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/config/Clash.ini|
 |N3RO.ini|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/config/N3RO.ini|
-|UNI.ini|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/config/QCJS.ini|
+|QCJS.ini|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/config/QCJS.ini|
