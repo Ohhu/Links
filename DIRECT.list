@@ -38,4 +38,4 @@ DOMAIN-SUFFIX,git.new
 DOMAIN-SUFFIX,amzn.id
 
 # > FCM
-DOMAIN-KEYWORD,mtalk.google
+# DOMAIN-KEYWORD,mtalk.google
