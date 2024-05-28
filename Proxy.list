@@ -54,4 +54,4 @@ IP-CIDR,220.181.174.226/32,no-resolve
 IP-CIDR,220.181.174.34/32,no-resolve
 
 # > FCM
-DOMAIN-KEYWORD,mtalk.google
+# DOMAIN-KEYWORD,mtalk.google
