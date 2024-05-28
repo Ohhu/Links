@@ -11,7 +11,7 @@ rule = ['[]🏵 Singapore', '[]🍀 Taiwan', '[]🍉 Korea','[]🌹 U.S.', '[]�
 [[custom_groups]]
 name = '💫 FCM'
 type = "select"
-rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea','[]🌸 Japan', '[]🏵 Singapore', '[]🌹 U.S.', '[]🍭 Proxy', '(^[^\d冷].*)']
+rule = ['[]🍭 Proxy', '[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea','[]🌸 Japan', '[]🏵 Singapore', '[]🌹 U.S.', '(^[^\d冷].*)']
 
 [[custom_groups]]
 name = '⚡️ Google'
