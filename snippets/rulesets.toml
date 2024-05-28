@@ -23,6 +23,14 @@ group = "🍭 Proxy"
 ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/Proxy.list"
 
 [[rulesets]]
+group = "💫 FCM"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
+
+[[rulesets]]
+group = "💫 FCM"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list"
+
+[[rulesets]]
 group = "🏖 OpenAI"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
 
