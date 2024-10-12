@@ -1,6 +1,10 @@
+# [[rulesets]]
+# group = "DIRECT"
+# ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/DIRECT.list"
+
 [[rulesets]]
 group = "DIRECT"
-ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/DIRECT.list"
+ruleset = "rules/Ohhu/DIRECT.list"
 
 [[rulesets]]
 group = "DIRECT"
@@ -18,9 +22,13 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.
 group = "💥 ADban"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
 
+# [[rulesets]]
+# group = "🍭 Proxy"
+# ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/Proxy.list"
+
 [[rulesets]]
 group = "🍭 Proxy"
-ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/Proxy.list"
+ruleset = "rules/Ohhu/Proxy.list"
 
 [[rulesets]]
 group = "💫 FCM"
