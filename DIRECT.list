@@ -39,3 +39,10 @@ DOMAIN-SUFFIX,amzn.id
 
 # > FCM
 # DOMAIN-KEYWORD,mtalk.google
+
+# > DDNS
+DOMAIN-SUFFIX,ddns.oray.com
+DOMAIN-SUFFIX,666666.host
+DOMAIN-SUFFIX,ip.3322.net
+DOMAIN-SUFFIX,ipv4.ddnspod.com
+DOMAIN-SUFFIX,4.ipw.cn
