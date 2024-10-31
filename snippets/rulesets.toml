@@ -16,6 +16,10 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.
 
 [[rulesets]]
 group = "💥 ADban"
+ruleset = "rules/Ohhu/REJECT.list"
+
+[[rulesets]]
+group = "💥 ADban"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
 
 [[rulesets]]
