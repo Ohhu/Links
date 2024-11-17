@@ -7,7 +7,7 @@ group = "DIRECT"
 ruleset = "rules/Ohhu/DIRECT.list"
 
 # [[rulesets]]
-# group = "HOME"
+# group = "🏘 HOME"
 # ruleset = "rules/Ohhu/HOME.list"
 
 [[rulesets]]
