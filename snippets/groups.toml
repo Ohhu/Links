@@ -131,3 +131,8 @@ rule = ['[]REJECT', '[]☀️ DIRECT']
 name = '☀️ DIRECT'
 type = "select"
 rule = ['[]DIRECT']
+
+# [[custom_groups]]
+# name = '🏘 HOME'
+# type = "select"
+# rule = ['[]DIRECT', '(Home.*)']
