@@ -41,11 +41,11 @@ DOMAIN-SUFFIX,amzn.id
 # DOMAIN-KEYWORD,mtalk.google
 
 # > DDNS
-DOMAIN,ddns.oray.com
+DOMAIN-SUFFIX,ddns.oray.com
 DOMAIN-SUFFIX,666666.host
-DOMAIN,ip.3322.net
-DOMAIN,ipv4.ddnspod.com
-DOMAIN,4.ipw.cn
+DOMAIN-SUFFIX,ip.3322.net
+DOMAIN-SUFFIX,ipv4.ddnspod.com
+DOMAIN-SUFFIX,4.ipw.cn
 
 # > Microsoft Update
-DOMAIN,catalog.update.microsoft.com
+DOMAIN-SUFFIX,catalog.update.microsoft.com
