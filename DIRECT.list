@@ -49,3 +49,6 @@ DOMAIN-SUFFIX,4.ipw.cn
 
 # > Microsoft Update
 DOMAIN-SUFFIX,catalog.update.microsoft.com
+
+# > Subtitles
+DOMAIN-KEYWORD,opensubtitles
