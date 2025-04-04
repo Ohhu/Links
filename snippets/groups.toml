@@ -24,6 +24,11 @@ type = "select"
 rule = ['[]💐 HongKong', '[]🌹 U.S.', '[]🏵 Singapore', '[]🌸 Japan','[]🍀 Taiwan', '[]🍉 Korea', '[]🍭 Proxy', '(^[^\d冷].*)', '[]☀️ DIRECT']
 
 [[custom_groups]]
+name = '☯ AdJust'
+type = "select"
+rule = ['[]☀️ DIRECT', '[]💐 HongKong', '[]🌹 U.S.', '[]🏵 Singapore', '[]🌸 Japan','[]🍀 Taiwan', '[]🍉 Korea', '[]🍭 Proxy', '(.*?0.5x$)']
+
+[[custom_groups]]
 name = '🌟 GlobalMedia'
 type = "select"
 rule = ['[]🍭 Proxy', '[]☀️ DIRECT', '(^[^\d冷].*)']
