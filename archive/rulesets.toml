@@ -1,0 +1,91 @@
+# [[rulesets]]
+# group = "DIRECT"
+# ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/DIRECT.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "rules/Ohhu/DIRECT.list"
+
+# [[rulesets]]
+# group = "🏘 HOME"
+# ruleset = "rules/Ohhu/HOME.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list"
+
+[[rulesets]]
+group = "💥 ADban"
+ruleset = "rules/Ohhu/REJECT.list"
+
+[[rulesets]]
+group = "💥 ADban"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
+
+[[rulesets]]
+group = "💥 ADban"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
+
+# [[rulesets]]
+# group = "🍭 Proxy"
+# ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/Proxy.list"
+
+[[rulesets]]
+group = "🍭 Proxy"
+ruleset = "rules/Ohhu/Proxy.list"
+
+[[rulesets]]
+group = "💫 FCM"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
+
+[[rulesets]]
+group = "💫 FCM"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list"
+
+[[rulesets]]
+group = "🏖 OpenAI"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
+
+[[rulesets]]
+group = "✨ YouTube"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+
+[[rulesets]]
+group = "🌟 GlobalMedia"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+
+[[rulesets]]
+group = "⚡️ Google"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+
+[[rulesets]]
+group = "💧 Telegram"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
+
+[[rulesets]]
+group = "🍭 Proxy"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "[]GEOIP,CN"
+
+[[rulesets]]
+group = "🌎 Others"
+ruleset = "[]MATCH"

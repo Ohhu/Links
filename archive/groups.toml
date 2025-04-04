@@ -1,0 +1,138 @@
+[[custom_groups]]
+name = '💧 Telegram'
+type = "select"
+rule = ['[]🏵 Singapore', '[]💐 HongKong', '[]🌸 Japan', '[]🍀 Taiwan','[]🍉 Korea', '[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
+
+[[custom_groups]]
+name = '🏖 OpenAI'
+type = "select"
+rule = ['[]🏵 Singapore', '[]🍀 Taiwan', '[]🍉 Korea','[]🌹 U.S.', '[]🌸 Japan',  '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
+
+[[custom_groups]]
+name = '💫 FCM'
+type = "select"
+rule = ['[]🍭 Proxy', '[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌹 U.S.', '(^[^\d冷].*)']
+
+[[custom_groups]]
+name = '⚡️ Google'
+type = "select"
+rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌹 U.S.', '[]🍭 Proxy', '(^[^\d冷].*)']
+
+[[custom_groups]]
+name = '✨ YouTube'
+type = "select"
+rule = ['[]💐 HongKong', '[]🌹 U.S.', '[]🏵 Singapore', '[]🌸 Japan','[]🍀 Taiwan', '[]🍉 Korea', '[]🍭 Proxy', '(^[^\d冷].*)', '[]☀️ DIRECT']
+
+[[custom_groups]]
+name = '🌟 GlobalMedia'
+type = "select"
+rule = ['[]🍭 Proxy', '[]☀️ DIRECT', '(^[^\d冷].*)']
+
+[[custom_groups]]
+name = '🍭 Proxy'
+type = "select"
+rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea','[]🏵 Singapore', '[]🌹 U.S.', '[]🌸 Japan', '[]☀️ DIRECT', '(^[^\d].*)']
+
+[[custom_groups]]
+name = '🌎 Others'
+type = "select"
+rule = ['[]🍭 Proxy', '[]☀️ DIRECT', '(^[^\d冷].*)']
+
+[[custom_groups]]
+name = '🌹 U.S.'
+type = "select"
+rule = ['[]🌹 url-test', '(美国.*?[x\d\)]$|USA.*?[x\d\)]$)']
+
+[[custom_groups]]
+name = '💐 HongKong'
+type = "select"
+rule = ['[]💐 url-test', '(香港.*?[x\d\)]$|HK.*?[x\d\)]$)']
+
+[[custom_groups]]
+name = '🍀 Taiwan'
+type = "select"
+rule = ['[]🍀 url-test', '(台湾.*?[x\d\)]$|TW.*?[x\d\)]$)']
+
+[[custom_groups]]
+name = '🏵 Singapore'
+type = "select"
+rule = ['[]🏵 url-test', '(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)']
+
+[[custom_groups]]
+name = '🌸 Japan'
+type = "select"
+rule = ['[]🌸 url-test', '(日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
+
+[[custom_groups]]
+name = '🍉 Korea'
+type = "select"
+rule = ['[]🍉 url-test', '(韩国.*?[x\d\)]$|KR.*?[x\d\)]$)']
+
+# [[custom_groups]]
+# name = '🌐 Cloudflare'
+# type = "select"
+# rule = ['[]🌐 url-test', '([\w-]+WARP-\d*$)']
+
+[[custom_groups]]
+name = '🌹 url-test'
+type = "url-test"
+rule = ['(美国.*?\d$|USA.*?[x\d\)]$)']
+url = 'http://www.gstatic.com/generate_204'
+interval = 400
+
+[[custom_groups]]
+name = '💐 url-test'
+type = "url-test"
+rule = ['(香港.*?\d$|HK.*?[x\d\)]$)']
+url = 'http://www.gstatic.com/generate_204'
+interval = 400
+
+[[custom_groups]]
+name = '🍀 url-test'
+type = "url-test"
+rule = ['(台湾.*?\d$|TW.*?[x\d\)]$)']
+url = 'http://www.gstatic.com/generate_204'
+interval = 400
+
+[[custom_groups]]
+name = '🏵 url-test'
+type = "url-test"
+rule = ['(新加坡.*?\d$|SGP.*?[x\d\)]$)']
+url = 'http://www.gstatic.com/generate_204'
+interval = 400
+
+[[custom_groups]]
+name = '🌸 url-test'
+type = "url-test"
+rule = ['(日本.*?\d$|JP.*?[x\d\)]$)']
+url = 'http://www.gstatic.com/generate_204'
+interval = 400
+
+[[custom_groups]]
+name = '🍉 url-test'
+type = "url-test"
+rule = ['(韩国.*?\d$|KR.*?[x\d\)]$)']
+url = 'http://www.gstatic.com/generate_204'
+interval = 400
+
+# [[custom_groups]]
+# name = '🌐 url-test'
+# type = "url-test"
+# rule = ['([\w-]+WARP-\d*$)']
+# url = 'http://www.gstatic.com/generate_204'
+# interval = 400
+
+[[custom_groups]]
+name = '💥 ADban'
+type = "select"
+rule = ['[]REJECT', '[]☀️ DIRECT']
+
+[[custom_groups]]
+name = '☀️ DIRECT'
+type = "select"
+rule = ['[]DIRECT']
+
+# [[custom_groups]]
+# name = '🏘 HOME'
+# type = "select"
+# rule = ['[]DIRECT', '(Home.*)']
