@@ -11,6 +11,10 @@ ruleset = "rules/Ohhu/DIRECT.list"
 # ruleset = "rules/Ohhu/HOME.list"
 
 [[rulesets]]
+group = "☯ AdJust"
+ruleset = "rules/Ohhu/AdJust.list"
+
+[[rulesets]]
 group = "DIRECT"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
 
