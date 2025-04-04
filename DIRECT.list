@@ -52,3 +52,6 @@ DOMAIN-SUFFIX,catalog.update.microsoft.com
 
 # > Subtitles
 DOMAIN-KEYWORD,opensubtitles
+
+# > Emby
+DOMAIN-SUFFIX,tanhuatv.site
