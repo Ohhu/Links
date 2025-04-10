@@ -6,12 +6,17 @@ rule = ['[]🏵 Singapore', '[]💐 HongKong', '[]🌸 Japan', '[]🍀 Taiwan','
 [[custom_groups]]
 name = '🏖 OpenAI'
 type = "select"
-rule = ['[]🏵 Singapore', '[]🍀 Taiwan', '[]🍉 Korea','[]🌹 U.S.', '[]🌸 Japan',  '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
+rule = ['[]🏵 Singapore', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌹 U.S.', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
+
+[[custom_groups]]
+name = '♊️ Gemini'
+type = "select"
+rule = ['[]🌹 U.S.', '[]🏵 Singapore', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
 
 [[custom_groups]]
 name = '💫 FCM'
 type = "select"
-rule = ['[]🍭 Proxy', '[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌹 U.S.', '(^[^\d冷].*)']
+rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌹 U.S.', '(^[^\d冷].*)']
 
 [[custom_groups]]
 name = '⚡️ Google'
