@@ -12,9 +12,12 @@ DOMAIN-SUFFIX,tanhuatv.site
 # HKA
 DOMAIN-SUFFIX,aliz.work
 # 🍉
-DOMAIN-SUFFIX,mzlpin.1024.one
-DOMAIN-SUFFIX,seoul.1024.name
-DOMAIN-SUFFIX,sjc.1024.name
+DOMAIN-SUFFIX,1024.one
+DOMAIN-SUFFIX,1024.name
+# DOMAIN-SUFFIX,cf.1024.one
+# DOMAIN-SUFFIX,mzlpin.1024.one
+# DOMAIN-SUFFIX,seoul.1024.name
+# DOMAIN-SUFFIX,sjc.1024.name
 DOMAIN-SUFFIX,daigua.j8.work
 # 🐝
 DOMAIN-SUFFIX,free.28.al
