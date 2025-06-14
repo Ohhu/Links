@@ -53,7 +53,5 @@ DOMAIN-SUFFIX,catalog.update.microsoft.com
 # > Subtitles
 DOMAIN-KEYWORD,opensubtitles
 
-# > Emby
-# DOMAIN-SUFFIX,tanhuatv.site
-# DOMAIN-SUFFIX,mzlpin.1024.one
-# DOMAIN-SUFFIX,aliz.work
+# > soop
+DOMAIN-SUFFIX,sooplive.com
