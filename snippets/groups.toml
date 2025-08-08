@@ -1,17 +1,17 @@
 [[custom_groups]]
 name = '☯ AdJust'
 type = "select"
-rule = ['[]☀️ DIRECT', '[]💐 HongKong', '[]🌹 U.S.', '[]🏵 Singapore', '[]🌸 Japan','[]🍀 Taiwan', '[]🍉 Korea', '[]🍭 Proxy', '(.*?0.\dx$)']
+rule = ['[]☀️ DIRECT', '🥮 HongKong', '[]💐 HongKong', '🍛 Singapore', '[]🏵 Singapore', '🥠 Taiwan', '[]🍀 Taiwan', '🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy', '(.*?0.\dx$)']
 
 [[custom_groups]]
 name = '🍭 Proxy'
 type = "select"
-rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea','[]🏵 Singapore', '[]🌹 U.S.', '[]🌸 Japan', '[]☀️ DIRECT', '(^[^\d].*)']
+rule = ['🥮 HongKong', '[]💐 HongKong', '🍛 Singapore', '[]🏵 Singapore', '🥠 Taiwan', '[]🍀 Taiwan', '🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]☀️ DIRECT', '(^[^\d].*)']
 
 [[custom_groups]]
 name = '💧 Telegram'
 type = "select"
-rule = ['[]🏵 Singapore', '[]💐 HongKong', '[]🌸 Japan', '[]🍀 Taiwan','[]🍉 Korea', '[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
+rule = ['🍛 Singapore', '[]🏵 Singapore', '🥮 HongKong', '[]💐 HongKong', '🥠 Taiwan', '[]🍀 Taiwan', '🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
 
 [[custom_groups]]
 name = '⚡️ Google'
@@ -21,7 +21,7 @@ rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]�
 [[custom_groups]]
 name = '✨ YouTube'
 type = "select"
-rule = ['[]💐 HongKong', '[]🌹 U.S.', '[]🏵 Singapore', '[]🌸 Japan','[]🍀 Taiwan', '[]🍉 Korea', '[]🍭 Proxy', '(^[^\d冷].*)', '[]☀️ DIRECT']
+rule = ['🥮 HongKong', '[]💐 HongKong', '🍛 Singapore', '[]🏵 Singapore', '🥠 Taiwan', '[]🍀 Taiwan', '🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy', '(^[^\d冷].*)', '[]☀️ DIRECT']
 
 [[custom_groups]]
 name = '🏖 OpenAI'
@@ -31,7 +31,7 @@ rule = ['[]🏵 Singapore', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌹 U.S.', '[]�
 [[custom_groups]]
 name = '♊️ Gemini'
 type = "select"
-rule = ['[]🌹 U.S.', '[]🏵 Singapore', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
+rule = ['[]🏵 Singapore', '[]🌹 U.S.', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
 
 [[custom_groups]]
 name = '💫 FCM'
@@ -93,20 +93,20 @@ name = '🌸 Japan'
 type = "select"
 rule = ['[]🌸 url-test', '(日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
 
-[[custom_groups]]
-name = '🍣 Japan'
-type = "select"
-rule = ['[]🍣 url-test', '(日本.*0\.\d|JP.*0\.\d)']
+# [[custom_groups]]
+# name = '🍣 Japan'
+# type = "select"
+# rule = ['[]🍣 url-test', '(日本.*0\.\d|JP.*0\.\d)']
 
 [[custom_groups]]
 name = '🍉 Korea'
 type = "select"
 rule = ['[]🍉 url-test', '(韩国.*?[x\d\)]$|KR.*?[x\d\)]$)']
 
-[[custom_groups]]
-name = '🍙 Korea'
-type = "select"
-rule = ['[]🍙 url-test', '(韩国.*0\.\d|KR.*0\.\d)']
+# [[custom_groups]]
+# name = '🍙 Korea'
+# type = "select"
+# rule = ['[]🍙 url-test', '(韩国.*0\.\d|KR.*0\.\d)']
 
 [[custom_groups]]
 name = '💥 ADban'
@@ -191,12 +191,12 @@ rule = ['(日本.*?\d$|JP.*?[x\d\)]$)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
-[[custom_groups]]
-name = '🍣 url-test'
-type = "url-test"
-rule = ['(日本.*0\.\d|JP.*0\.\d)']
-url = 'http://www.gstatic.com/generate_204'
-interval = 400
+# [[custom_groups]]
+# name = '🍣 url-test'
+# type = "url-test"
+# rule = ['(日本.*0\.\d|JP.*0\.\d)']
+# url = 'http://www.gstatic.com/generate_204'
+# interval = 400
 
 [[custom_groups]]
 name = '🍉 url-test'
@@ -205,12 +205,12 @@ rule = ['(韩国.*?\d$|KR.*?[x\d\)]$)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
-[[custom_groups]]
-name = '🍙 url-test'
-type = "url-test"
-rule = ['(韩国.*0\.\d|KR.*0\.\d)']
-url = 'http://www.gstatic.com/generate_204'
-interval = 400
+# [[custom_groups]]
+# name = '🍙 url-test'
+# type = "url-test"
+# rule = ['(韩国.*0\.\d|KR.*0\.\d)']
+# url = 'http://www.gstatic.com/generate_204'
+# interval = 400
 
 # [[custom_groups]]
 # name = '🌐 url-test'
