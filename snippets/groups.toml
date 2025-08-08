@@ -1,7 +1,7 @@
 [[custom_groups]]
 name = '☯ AdJust'
 type = "select"
-rule = ['[]☀️ DIRECT', '[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy', '(.*?0.\dx$)']
+rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '(.*?0.\dx$)']
 
 [[custom_groups]]
 name = '🍭 Proxy'
