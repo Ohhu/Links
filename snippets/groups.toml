@@ -1,17 +1,17 @@
 [[custom_groups]]
 name = '☯ AdJust'
 type = "select"
-rule = ['[]☀️ DIRECT', '🥮 HongKong', '[]💐 HongKong', '🍛 Singapore', '[]🏵 Singapore', '🥠 Taiwan', '[]🍀 Taiwan', '🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy', '(.*?0.\dx$)']
+rule = ['[]☀️ DIRECT', '[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy', '(.*?0.\dx$)']
 
 [[custom_groups]]
 name = '🍭 Proxy'
 type = "select"
-rule = ['🥮 HongKong', '[]💐 HongKong', '🍛 Singapore', '[]🏵 Singapore', '🥠 Taiwan', '[]🍀 Taiwan', '🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]☀️ DIRECT', '(^[^\d].*)']
+rule = ['[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]☀️ DIRECT', '(^[^\d].*)']
 
 [[custom_groups]]
 name = '💧 Telegram'
 type = "select"
-rule = ['🍛 Singapore', '[]🏵 Singapore', '🥮 HongKong', '[]💐 HongKong', '🥠 Taiwan', '[]🍀 Taiwan', '🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
+rule = ['[]🍛 Singapore', '[]🏵 Singapore', '[]🥮 HongKong', '[]💐 HongKong', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
 
 [[custom_groups]]
 name = '⚡️ Google'
@@ -21,7 +21,7 @@ rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]�
 [[custom_groups]]
 name = '✨ YouTube'
 type = "select"
-rule = ['🥮 HongKong', '[]💐 HongKong', '🍛 Singapore', '[]🏵 Singapore', '🥠 Taiwan', '[]🍀 Taiwan', '🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy', '(^[^\d冷].*)', '[]☀️ DIRECT']
+rule = ['[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍔 U.S.', '[]🌹 U.S.', '[]🌸 Japan', '[]🍉 Korea', '[]🍭 Proxy', '(^[^\d冷].*)', '[]☀️ DIRECT']
 
 [[custom_groups]]
 name = '🏖 OpenAI'
@@ -123,10 +123,10 @@ rule = ['[]DIRECT']
 # type = "select"
 # rule = ['[]🌐 url-test', '([\w-]+WARP-\d*$)']
 
-# [[custom_groups]]
-# name = '🏘 HOME'
-# type = "select"
-# rule = ['[]DIRECT', '(Home.*)']
+[[custom_groups]]
+name = '🏘 HOME'
+type = "select"
+rule = ['[]DIRECT', '(Home.*)']
 
 [[custom_groups]]
 name = '🌹 url-test'
