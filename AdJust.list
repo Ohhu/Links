@@ -53,7 +53,7 @@ DOMAIN-SUFFIX,mebimmer.de
 # FWorks
 DOMAIN,fworks-emby.webn.cc
 # 一之濑琴美的电视台
-DOMAIN,ichinosekotomi.191920.xyz
+DOMAIN-SUFFIX,191920.xyz
 # Nanflix
 DOMAIN,us.nanflix.net
 # > soop
