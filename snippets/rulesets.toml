@@ -51,12 +51,24 @@ group = "💫 FCM"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list"
 
 [[rulesets]]
-group = "🏖 OpenAI"
+group = "🌌 Assistant"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
 
 [[rulesets]]
-group = "♊️ Gemini"
+group = "🌌 Assistant"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Gemini.list"
+
+[[rulesets]]
+group = "🌌 Assistant"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude.list"
+
+# [[rulesets]]
+# group = "🏖 OpenAI"
+# ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
+
+# [[rulesets]]
+# group = "♊️ Gemini"
+# ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Gemini.list"
 
 [[rulesets]]
 group = "✨ YouTube"
