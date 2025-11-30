@@ -52,6 +52,10 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Rulese
 
 [[rulesets]]
 group = "🌌 Assistant"
+ruleset = "rules/Ohhu/Assistant.list"
+
+[[rulesets]]
+group = "🌌 Assistant"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
 
 [[rulesets]]
