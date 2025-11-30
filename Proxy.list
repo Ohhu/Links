@@ -58,3 +58,9 @@ IP-CIDR,220.181.174.34/32,no-resolve
 
 # > 探花论坛
 DOMAIN,navix.site
+
+# > linuxdo
+DOMAIN-SUFFIX,linux.do
+
+# > v2ex
+DOMAIN-SUFFIX,v2ex.com
