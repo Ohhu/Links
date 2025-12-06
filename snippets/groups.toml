@@ -141,84 +141,85 @@ rule = ['[]DIRECT', '(Home.*)']
 [[custom_groups]]
 name = '🌹 url-test'
 type = "url-test"
-rule = ['(美国.*?\d$|USA.*?[x\d\)]$)']
+# 解释: (?<!\|\s) 表示前面不能是 "| "
+rule = ['((?<!\|\s)美国.*?\d$|(?<!\|\s)USA.*?[x\d\)]$)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🍔 url-test'
 type = "url-test"
-rule = ['(美国.*0\.\d|USA.*0\.\d)']
+rule = ['((?<!\|\s)美国.*0\.\d|(?<!\|\s)USA.*0\.\d)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '💐 url-test'
 type = "url-test"
-rule = ['(香港.*?\d$|HK.*?[x\d\)]$)']
+rule = ['((?<!\|\s)香港.*?\d$|(?<!\|\s)HK.*?[x\d\)]$)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🥮 url-test'
 type = "url-test"
-rule = ['(香港.*0\.\d|HK.*0\.\d)']
+rule = ['((?<!\|\s)香港.*0\.\d|(?<!\|\s)HK.*0\.\d)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🍀 url-test'
 type = "url-test"
-rule = ['(台湾.*?\d$|TW.*?[x\d\)]$)']
+rule = ['((?<!\|\s)台湾.*?\d$|(?<!\|\s)TW.*?[x\d\)]$)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🥠 url-test'
 type = "url-test"
-rule = ['(台湾.*0\.\d|TW.*0\.\d)']
+rule = ['((?<!\|\s)台湾.*0\.\d|(?<!\|\s)TW.*0\.\d)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🏵 url-test'
 type = "url-test"
-rule = ['(新加坡.*?\d$|SGP.*?[x\d\)]$)']
+rule = ['((?<!\|\s)新加坡.*?\d$|(?<!\|\s)SGP.*?[x\d\)]$)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🍛 url-test'
 type = "url-test"
-rule = ['(新加坡.*0\.\d|SGP.*0\.\d)']
+rule = ['((?<!\|\s)新加坡.*0\.\d|(?<!\|\s)SGP.*0\.\d)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🌸 url-test'
 type = "url-test"
-rule = ['(日本.*?\d$|JP.*?[x\d\)]$)']
+rule = ['((?<!\|\s)日本.*?\d$|(?<!\|\s)JP.*?[x\d\)]$)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🍣 url-test'
 type = "url-test"
-rule = ['(日本.*0\.\d|JP.*0\.\d)']
+rule = ['((?<!\|\s)日本.*0\.\d|(?<!\|\s)JP.*0\.\d)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🍉 url-test'
 type = "url-test"
-rule = ['(韩国.*?\d$|KR.*?[x\d\)]$)']
+rule = ['((?<!\|\s)韩国.*?\d$|(?<!\|\s)KR.*?[x\d\)]$)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
 [[custom_groups]]
 name = '🍙 url-test'
 type = "url-test"
-rule = ['(韩国.*0\.\d|KR.*0\.\d)']
+rule = ['((?<!\|\s)韩国.*0\.\d|(?<!\|\s)KR.*0\.\d)']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
