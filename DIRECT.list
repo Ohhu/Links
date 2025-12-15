@@ -50,6 +50,9 @@ DOMAIN-SUFFIX,4.ipw.cn
 # > Microsoft Update
 DOMAIN-SUFFIX,catalog.update.microsoft.com
 
+# > elysia
+DOMAIN,elysia.h-e.top
+
 # > Subtitles
 DOMAIN-KEYWORD,opensubtitles
 
