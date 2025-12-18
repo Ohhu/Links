@@ -12,3 +12,6 @@ DOMAIN-SUFFIX,poe.com
 
 # > CPA
 DOMAIN,cpa.zeabur.app
+
+# > Flow
+DOMAIN-SUFFIX,labs.google
