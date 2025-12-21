@@ -18,4 +18,8 @@
 
 |配置文件|URL|
 |:--:|:--:|
+|AdJust.list|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/profiles/AdJust.list|
 |Assistant.list|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/profiles/Assistant.list|
+|DIRECT.list|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/profiles/DIRECT.list|
+|Proxy.list|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/profiles/Proxy.list|
+|REJECT.list|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/profiles/REJECT.list|
