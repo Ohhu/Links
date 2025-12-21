@@ -13,3 +13,9 @@
 |:--:|:--:|
 |N3RO.ini|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/config/N3RO.ini|
 |QCJS.ini|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/config/QCJS.ini|
+
+#### profiles：
+
+|配置文件|URL|
+|:--:|:--:|
+|Assistant.list|https://cdn.jsdelivr.net/gh/Ohhu/Links@Clash/profiles/Assistant.list|
