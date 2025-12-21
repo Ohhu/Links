@@ -13,5 +13,35 @@ DOMAIN-SUFFIX,poe.com
 # > CPA
 DOMAIN,cpa.zeabur.app
 
+# > KFC
+DOMAIN,kfc-api.sxxe.net
+
+# > 随时跑路
+DOMAIN,runanytime.hxi.me
+
+# > WONG
+DOMAIN,wzw.pp.ua
+
+# > 无言
+DOMAIN,aiai.li
+
+# > That API
+DOMAIN,gyapi.zxiaoruan.cn
+
+# > Huan
+DOMAIN,ai.huan666.de
+
+# > 萤
+DOMAIN,api.wpgzs.top
+
+# > 薄荷
+DOMAIN,x666.me
+
+# > Hugging Face
+DOMAIN,router.huggingface.co
+
+# > 黑与白
+DOMAIN,ai.hybgzs.com
+
 # > Flow
 DOMAIN-SUFFIX,labs.google
