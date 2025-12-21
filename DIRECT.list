@@ -1,0 +1,61 @@
+# Surge -定制自己的规则配置
+# https://medium.com/@scomper/surge-%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E8%A7%84%E5%88%99%E9%85%8D%E7%BD%AE-34a6d74b0434
+# ConnerHua
+# https://github.com/ConnersHua/Profiles/blob/master/Surge/Ruleset/Unbreak.list
+
+# 判断域名：DOMAIN
+# 域名后缀：DOMAIN-SUFFIX
+# 关键词：DOMAIN-KEYWORD
+
+# > synology
+DOMAIN-KEYWORD,synology
+DOMAIN-SUFFIX,synocommunity.com
+
+# > pdawiki
+# DOMAIN,www.pdawiki.com
+
+# > regex101
+DOMAIN-SUFFIX,regex101.com
+
+# > nfmovies
+DOMAIN-SUFFIX,nfmovies.com
+
+# > Z-Library 
+DOMAIN,lib-cgqgovkh7372uzenw4h3pfft.resist.tel
+# DOMAIN,lib-relh3lzrnzsenet5vh63mtgt.thanks.sbs
+
+# > cloudflare
+DOMAIN-SUFFIX,54894426.xyz
+DOMAIN-SUFFIX,998946.xyz
+# DOMAIN-SUFFIX,zihcup.com
+# DOMAIN-SUFFIX,vsiuiu.com
+# DOMAIN-SUFFIX,xbx3.com
+
+# > dub.co
+DOMAIN-SUFFIX,dub.sh
+DOMAIN-SUFFIX,chatg.pt
+DOMAIN-SUFFIX,spti.fi
+DOMAIN-SUFFIX,git.new
+DOMAIN-SUFFIX,amzn.id
+
+# > FCM
+# DOMAIN-KEYWORD,mtalk.google
+
+# > DDNS
+DOMAIN-SUFFIX,ddns.oray.com
+DOMAIN-SUFFIX,666666.host
+DOMAIN-SUFFIX,ip.3322.net
+DOMAIN-SUFFIX,ipv4.ddnspod.com
+DOMAIN-SUFFIX,4.ipw.cn
+
+# > Microsoft Update
+DOMAIN-SUFFIX,catalog.update.microsoft.com
+
+# > elysia
+DOMAIN,elysia.h-e.top
+
+# > Subtitles
+DOMAIN-KEYWORD,opensubtitles
+
+# > soop
+# DOMAIN-SUFFIX,sooplive.com
