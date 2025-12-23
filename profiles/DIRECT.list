@@ -62,3 +62,6 @@ DOMAIN-KEYWORD,opensubtitles
 
 # > Custom IP
 IP-CIDR,69.63.223.126/32
+
+# > zeabur
+DOMAIN,a10.zeabur.app
