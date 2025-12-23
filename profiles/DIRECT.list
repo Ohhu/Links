@@ -59,3 +59,6 @@ DOMAIN-KEYWORD,opensubtitles
 
 # > soop
 # DOMAIN-SUFFIX,sooplive.com
+
+# > Custom IP
+IP-CIDR,69.63.223.126/32
