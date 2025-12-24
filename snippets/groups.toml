@@ -1,37 +1,37 @@
 [[custom_groups]]
 name = '☯ AdJust'
 type = "select"
-rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍣 Japan', '[]🌸 Japan', '[]🍙 Korea', '[]🍉 Korea', '[]🍔 U.S.', '[]🌹 U.S.', '(.*?0.\dx$)']
+rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍣 Japan', '[]🌸 Japan', '[]🍙 Korea', '[]🍉 Korea', '[]🌺 SelfHost', '[]🍔 U.S.', '[]🌹 U.S.', '(.*?0.\dx$)']
 
 [[custom_groups]]
 name = '💧 Telegram'
 type = "select"
-rule = ['[]🍛 Singapore', '[]🏵 Singapore', '[]🥮 HongKong', '[]💐 HongKong', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍣 Japan', '[]🌸 Japan', '[]🍙 Korea', '[]🍉 Korea', '[]🍔 U.S.', '[]🌹 U.S.', '[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
+rule = ['[]🍛 Singapore', '[]🏵 Singapore', '[]🥮 HongKong', '[]💐 HongKong', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍣 Japan', '[]🌸 Japan', '[]🍙 Korea', '[]🍉 Korea', '[]🌺 SelfHost', '[]🍔 U.S.', '[]🌹 U.S.', '[]🍭 Proxy','(新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$)','[]☀️ DIRECT']
 
 [[custom_groups]]
 name = '🌌 Assistant'
 type = "select"
-rule = ['[]🏵 Singapore', '[]🌹 U.S.', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
+rule = ['[]🏵 Singapore', '[]🌺 SelfHost', '[]🌹 U.S.', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
 
 [[custom_groups]]
 name = '𝕏 Twitter'
 type = "select"
-rule = ['[]💐 HongKong', '[]🏵 Singapore', '[]🌹 U.S.', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|香港.*?[x\d\)]$|HK.*?[x\d\)]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
+rule = ['[]💐 HongKong', '[]🏵 Singapore', '[]🌺 SelfHost', '[]🌹 U.S.', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🍭 Proxy', '(GPT.*?[\dx\]]$|香港.*?[x\d\)]$|HK.*?[x\d\)]$|新加坡.*?[x\d\)]$|SGP.*?[x\d\)]$|台湾.*?[x\d\)]$|TW.*?[x\d\)]$|美国.*?[x\d\)]$|USA.*?[x\d\)]$|日本.*?[x\d\)]$|JP.*?[x\d\)]$)']
 
 [[custom_groups]]
 name = '🍭 Proxy'
 type = "select"
-rule = ['[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍣 Japan', '[]🌸 Japan', '[]🍙 Korea', '[]🍉 Korea', '[]🍔 U.S.', '[]🌹 U.S.', '[]☀️ DIRECT', '(^[^\d].*)']
+rule = ['[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍣 Japan', '[]🌸 Japan', '[]🍙 Korea', '[]🍉 Korea', '[]🌺 SelfHost', '[]🍔 U.S.', '[]🌹 U.S.', '[]☀️ DIRECT', '(^[^\d].*)']
 
 [[custom_groups]]
 name = '⚡️ Google'
 type = "select"
-rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌹 U.S.', '[]🍭 Proxy', '(^[^\d冷].*)']
+rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌺 SelfHost', '[]🌹 U.S.', '[]🍭 Proxy', '(^[^\d冷].*)']
 
 [[custom_groups]]
 name = '✨ YouTube'
 type = "select"
-rule = ['[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍣 Japan', '[]🌸 Japan', '[]🍙 Korea', '[]🍉 Korea', '[]🍔 U.S.', '[]🌹 U.S.', '[]🍭 Proxy', '(^[^\d冷].*)', '[]☀️ DIRECT']
+rule = ['[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singapore', '[]🥠 Taiwan', '[]🍀 Taiwan', '[]🍣 Japan', '[]🌸 Japan', '[]🍙 Korea', '[]🍉 Korea', '[]🌺 SelfHost', '[]🍔 U.S.', '[]🌹 U.S.', '[]🍭 Proxy', '(^[^\d冷].*)', '[]☀️ DIRECT']
 
 # [[custom_groups]]
 # name = '🏖 OpenAI'
@@ -46,7 +46,7 @@ rule = ['[]🥮 HongKong', '[]💐 HongKong', '[]🍛 Singapore', '[]🏵 Singap
 [[custom_groups]]
 name = '💫 FCM'
 type = "select"
-rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌹 U.S.', '(^[^\d冷].*)']
+rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌺 SelfHost', '[]🌹 U.S.', '(^[^\d冷].*)']
 
 [[custom_groups]]
 name = '🌟 GlobalMedia'
@@ -57,6 +57,11 @@ rule = ['[]🍭 Proxy', '[]☀️ DIRECT', '(^[^\d冷].*)']
 name = '🌎 Others'
 type = "select"
 rule = ['[]🍭 Proxy', '[]☀️ DIRECT', '(^[^\d冷].*)']
+
+[[custom_groups]]
+name = '🌺 SelfHost'
+type = "select"
+rule = ['(^自建.*)']
 
 [[custom_groups]]
 name = '🌹 U.S.'
