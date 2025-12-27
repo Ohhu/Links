@@ -65,3 +65,6 @@ IP-CIDR,69.63.223.126/32
 
 # > zeabur
 DOMAIN,a10.zeabur.app
+
+# > betterclau.de
+DOMAIN-SUFFIX,betterclau.de
