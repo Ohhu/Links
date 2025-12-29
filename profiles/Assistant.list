@@ -43,5 +43,8 @@ DOMAIN,router.huggingface.co
 # > 黑与白
 DOMAIN,ai.hybgzs.com
 
+# > 枫叶
+DOMAIN-SUFFIX,fengyeai.chat
+
 # > Flow
 DOMAIN-SUFFIX,labs.google
