@@ -35,9 +35,6 @@ DOMAIN,elysiver.h-e.top
 # > Huan
 DOMAIN,ai.huan666.de
 
-# > 萤
-DOMAIN,api.wpgzs.top
-
 # > 薄荷
 DOMAIN,x666.me
 
@@ -49,6 +46,12 @@ DOMAIN,ai.hybgzs.com
 
 # > 枫叶
 DOMAIN-SUFFIX,fengyeai.chat
+
+# > Hotaru
+DOMAIN,api.hotaruapi.top
+
+# > anyrouter
+DOMAIN-SUFFIX,anyrouter.top
 
 # > Flow
 DOMAIN-SUFFIX,labs.google
