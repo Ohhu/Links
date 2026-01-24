@@ -54,6 +54,9 @@ DOMAIN-SUFFIX,catalog.update.microsoft.com
 # > elysia
 DOMAIN,elysia.h-e.top
 
+# > hyb
+DOMAIN,eo.ai.hybgzs.com
+
 # > Subtitles
 DOMAIN-KEYWORD,opensubtitles
 
