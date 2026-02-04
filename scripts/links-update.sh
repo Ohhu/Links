@@ -21,11 +21,8 @@ PROFILES_DIR="${PROJECT_ROOT}/rule/Ohhu"    # Profiles 文件存放目录
 SNIPPETS_DIR="${PROJECT_ROOT}/snippets"     # Snippets 文件存放目录
 
 # 文件定义
-PROFILES_FILES="AdJust.list Assistant.list DIRECT.list Proxy.list REJECT.list"
+PROFILES_FILES="AdJust.list Assistant.list DIRECT.list HOME.list Proxy.list REJECT.list"
 SNIPPETS_FILES="groups.toml rulesets.toml"
-
-# 默认数据源（github 或 cdn）
-DEFAULT_SOURCE="github"
 
 # ============================================
 # 以下为脚本逻辑，一般无需修改
@@ -52,10 +49,6 @@ log_info() {
     echo -e "${BLUE}[INFO]${NC} $1"
 }
 
-log_success() {
-    echo -e "${GREEN}[✓]${NC} $1"
-}
-
 log_error() {
     echo -e "${RED}[✗]${NC} $1"
 }
@@ -73,9 +66,9 @@ print_separator() {
 print_title() {
     echo ""
     echo -e "${CYAN}╔════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${CYAN}║${NC}           ${BLUE}Links Update Script${NC}                          ${CYAN}║${NC}"
-    echo -e "${CYAN}║${NC}        更新 Clash 配置文件和规则列表                      ${CYAN}║${NC}"
-    echo -e "${CYAN}╚══════════════���═════════════════════════════════════════════╝${NC}"
+    echo -e "${CYAN}║${NC}           ${BLUE}Links Update Script${NC}                              ${CYAN}║${NC}"
+    echo -e "${CYAN}║${NC}        更新 Clash 配置文件和规则列表                        ${CYAN}║${NC}"
+    echo -e "${CYAN}╚════════════════════════════════════════════════════════════╝${NC}"
     echo ""
 }
 
@@ -106,19 +99,22 @@ ${YELLOW}配置说明:${NC}
 EOF
 }
 
+# 获取目标目录
+get_target_dir() {
+    local category=$1
+    if [ "$category" = "profiles" ]; then
+        echo "$PROFILES_DIR"
+    else
+        echo "$SNIPPETS_DIR"
+    fi
+}
+
 # 下载文件
 download_file() {
     local filename=$1
     local category=$2
     local base_url=$3
-
-    # 根据类别确定目标目录
-    local target_dir
-    if [ "$category" = "profiles" ]; then
-        target_dir="$PROFILES_DIR"
-    else
-        target_dir="$SNIPPETS_DIR"
-    fi
+    local target_dir=$(get_target_dir "$category")
 
     local target_path="${target_dir}/${filename}"
     local temp_path="${target_path}.tmp"
@@ -133,7 +129,6 @@ download_file() {
     # 下载文件到临时位置
     echo -ne "  正在下载 ${CYAN}${filename}${NC} ... "
 
-    # 使用临时文件下载，添加超时和重试机��
     if curl -s -f \
         --connect-timeout 10 \
         --max-time 60 \
@@ -142,20 +137,16 @@ download_file() {
         -o "${temp_path}" \
         "${url}"; then
 
-        # 检查文件大小（确保文件非空）
         if [ -s "${temp_path}" ]; then
-            # 文件非空，移动到目标位置
             mv "${temp_path}" "${target_path}"
             echo -e "${GREEN}✓${NC}"
             return 0
         else
-            # 文件为空
             rm -f "${temp_path}"
             echo -e "${RED}✗ (空文件)${NC}"
             return 1
         fi
     else
-        # 下载失败，清理临时文件
         rm -f "${temp_path}"
         echo -e "${RED}✗ (下载失败)${NC}"
         return 1
@@ -234,12 +225,13 @@ show_file_menu() {
     echo -e "  ${GREEN}1)${NC} AdJust.list"
     echo -e "  ${GREEN}2)${NC} Assistant.list"
     echo -e "  ${GREEN}3)${NC} DIRECT.list"
-    echo -e "  ${GREEN}4)${NC} Proxy.list"
-    echo -e "  ${GREEN}5)${NC} REJECT.list"
+    echo -e "  ${GREEN}4)${NC} HOME.list"
+    echo -e "  ${GREEN}5)${NC} Proxy.list"
+    echo -e "  ${GREEN}6)${NC} REJECT.list"
     echo ""
     echo -e "${BLUE}Snippets (配置片段):${NC}"
-    echo -e "  ${GREEN}6)${NC} groups.toml"
-    echo -e "  ${GREEN}7)${NC} rulesets.toml"
+    echo -e "  ${GREEN}7)${NC} groups.toml"
+    echo -e "  ${GREEN}8)${NC} rulesets.toml"
     echo ""
     echo -e "  ${RED}0)${NC} 返回主菜单"
     echo ""
@@ -261,13 +253,17 @@ wait_key() {
     read
 }
 
-# 更新所有文件
-update_all() {
-    local base_url=$1
-
+# 重置统计计数器
+reset_counters() {
     SUCCESS_COUNT=0
     FAIL_COUNT=0
     FAILED_FILES=""
+}
+
+# 更新所有文件
+update_all() {
+    local base_url=$1
+    reset_counters
 
     echo ""
     log_info "开始更新所有文件..."
@@ -287,10 +283,7 @@ update_all() {
 # 更新 Profiles
 update_profiles() {
     local base_url=$1
-
-    SUCCESS_COUNT=0
-    FAIL_COUNT=0
-    FAILED_FILES=""
+    reset_counters
 
     echo ""
     log_info "开始更新 Profiles..."
@@ -305,10 +298,7 @@ update_profiles() {
 # 更新 Snippets
 update_snippets() {
     local base_url=$1
-
-    SUCCESS_COUNT=0
-    FAIL_COUNT=0
-    FAILED_FILES=""
+    reset_counters
 
     echo ""
     log_info "开始更新 Snippets..."
@@ -326,7 +316,7 @@ update_single() {
 
     while true; do
         show_file_menu
-        choice=$(get_input "请输入选项 [0-7]: ")
+        choice=$(get_input "请输入选项 [0-8]: ")
 
         case $choice in
             0)
@@ -345,18 +335,22 @@ update_single() {
                 category="profiles"
                 ;;
             4)
-                filename="Proxy.list"
+                filename="HOME.list"
                 category="profiles"
                 ;;
             5)
-                filename="REJECT.list"
+                filename="Proxy.list"
                 category="profiles"
                 ;;
             6)
+                filename="REJECT.list"
+                category="profiles"
+                ;;
+            7)
                 filename="groups.toml"
                 category="snippets"
                 ;;
-            7)
+            8)
                 filename="rulesets.toml"
                 category="snippets"
                 ;;
@@ -368,9 +362,7 @@ update_single() {
         esac
 
         # 执行更新
-        SUCCESS_COUNT=0
-        FAIL_COUNT=0
-        FAILED_FILES=""
+        reset_counters
 
         echo ""
         echo -e "${YELLOW}将要更新: ${CYAN}${filename}${NC}"
@@ -388,15 +380,7 @@ update_single() {
 
         if download_file "$filename" "$category" "$base_url"; then
             SUCCESS_COUNT=1
-
-            # 下载成功后显示文件内容
-            local target_dir
-            if [ "$category" = "profiles" ]; then
-                target_dir="$PROFILES_DIR"
-            else
-                target_dir="$SNIPPETS_DIR"
-            fi
-            local file_path="${target_dir}/${filename}"
+            local file_path="$(get_target_dir "$category")/${filename}"
 
             echo ""
             print_separator

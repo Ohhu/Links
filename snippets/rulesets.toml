@@ -3,12 +3,12 @@
 # ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/DIRECT.list"
 
 [[rulesets]]
-group = "DIRECT"
-ruleset = "rules/Ohhu/DIRECT.list"
-
-[[rulesets]]
 group = "🏘 HOME"
 ruleset = "rules/Ohhu/HOME.list"
+
+[[rulesets]]
+group = "DIRECT"
+ruleset = "rules/Ohhu/DIRECT.list"
 
 [[rulesets]]
 group = "☯ AdJust"
