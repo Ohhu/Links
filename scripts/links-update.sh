@@ -17,7 +17,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 # 文件存放路径配置
-PROFILES_DIR="${PROJECT_ROOT}/rule/Ohhu"    # Profiles 文件存放目录
+PROFILES_DIR="${PROJECT_ROOT}/rules/Ohhu"    # Profiles 文件存放目录
 SNIPPETS_DIR="${PROJECT_ROOT}/snippets"     # Snippets 文件存放目录
 
 # 文件定义
