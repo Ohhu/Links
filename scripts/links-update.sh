@@ -45,6 +45,9 @@ FAILED_FILES=""
 # 是否使用 CDN
 USE_CDN=false
 
+# 保存原始命令行参数
+ORIGINAL_ARGS=""
+
 # 打印信息
 log_info() {
     echo -e "${BLUE}[INFO]${NC} $1"
@@ -432,7 +435,7 @@ update_self() {
             echo -e "${GREEN}脚本更新成功！正在重新启动...${NC}"
             print_separator
             sleep 1
-            exec "$script_path" "$@"
+            exec "$script_path" $ORIGINAL_ARGS
         else
             rm -f "${temp_path}"
             echo -e "${RED}✗ (空文件)${NC}"
@@ -468,6 +471,9 @@ parse_args() {
 
 # 主函数
 main() {
+    # 保存原始命令行参数
+    ORIGINAL_ARGS="$*"
+
     # 解析命令行参数
     parse_args "$@"
 
