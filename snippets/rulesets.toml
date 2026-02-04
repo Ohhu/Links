@@ -1,7 +1,3 @@
-# [[rulesets]]
-# group = "DIRECT"
-# ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/DIRECT.list"
-
 [[rulesets]]
 group = "🏘 HOME"
 ruleset = "rules/Ohhu/HOME.list"
@@ -34,10 +30,6 @@ ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list"
 group = "💥 ADban"
 ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list"
 
-# [[rulesets]]
-# group = "🍭 Proxy"
-# ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/Proxy.list"
-
 [[rulesets]]
 group = "🍭 Proxy"
 ruleset = "rules/Ohhu/Proxy.list"
@@ -69,14 +61,6 @@ ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/
 [[rulesets]]
 group = "𝕏 Twitter"
 ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.list"
-
-# [[rulesets]]
-# group = "🏖 OpenAI"
-# ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
-
-# [[rulesets]]
-# group = "♊️ Gemini"
-# ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Gemini.list"
 
 [[rulesets]]
 group = "✨ YouTube"
@@ -117,3 +101,19 @@ ruleset = "[]GEOIP,CN"
 [[rulesets]]
 group = "🌎 Others"
 ruleset = "[]MATCH"
+
+# [[rulesets]]
+# group = "DIRECT"
+# ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/DIRECT.list"
+
+# [[rulesets]]
+# group = "🍭 Proxy"
+# ruleset = "https://cdn.jsdelivr.net/gh/Ohhu/Links@Profiles/Proxy.list"
+
+# [[rulesets]]
+# group = "🏖 OpenAI"
+# ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
+
+# [[rulesets]]
+# group = "♊️ Gemini"
+# ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Gemini.list"
