@@ -23,6 +23,7 @@ SNIPPETS_DIR="${PROJECT_ROOT}/snippets"     # Snippets 文件存放目录
 # 文件定义
 PROFILES_FILES="AdJust.list Assistant.list DIRECT.list HOME.list Proxy.list REJECT.list"
 SNIPPETS_FILES="groups.toml rulesets.toml"
+SCRIPT_NAME="links-update.sh"
 
 # ============================================
 # 以下为脚本逻辑，一般无需修改
@@ -211,6 +212,7 @@ show_main_menu() {
     echo -e "  ${GREEN}2)${NC} 更新 Profiles（规则列表）"
     echo -e "  ${GREEN}3)${NC} 更新 Snippets（配置片段）"
     echo -e "  ${GREEN}4)${NC} 更新单个文件"
+    echo -e "  ${GREEN}5)${NC} 更新脚本自身"
     echo -e "  ${RED}0)${NC} 退出"
     echo ""
 }
@@ -400,6 +402,49 @@ update_single() {
     done
 }
 
+# 更新脚本自身
+update_self() {
+    local base_url=$1
+    local script_path="${SCRIPT_DIR}/${SCRIPT_NAME}"
+    local temp_path="${script_path}.tmp"
+    local url="${base_url}/scripts/${SCRIPT_NAME}"
+
+    echo ""
+    log_info "开始更新脚本自身..."
+    echo ""
+
+    echo -ne "  正在下载 ${CYAN}${SCRIPT_NAME}${NC} ... "
+
+    if curl -s -f \
+        --connect-timeout 10 \
+        --max-time 60 \
+        --retry 3 \
+        --retry-delay 2 \
+        -o "${temp_path}" \
+        "${url}"; then
+
+        if [ -s "${temp_path}" ]; then
+            chmod +x "${temp_path}"
+            mv "${temp_path}" "${script_path}"
+            echo -e "${GREEN}✓${NC}"
+            echo ""
+            print_separator
+            echo -e "${GREEN}脚本更新成功！正在重新启动...${NC}"
+            print_separator
+            sleep 1
+            exec "$script_path" "$@"
+        else
+            rm -f "${temp_path}"
+            echo -e "${RED}✗ (空文件)${NC}"
+        fi
+    else
+        rm -f "${temp_path}"
+        echo -e "${RED}✗ (下载失败)${NC}"
+    fi
+
+    wait_key
+}
+
 # 解析命令行参数
 parse_args() {
     while [ $# -gt 0 ]; do
@@ -437,7 +482,7 @@ main() {
     # 主循环
     while true; do
         show_main_menu
-        choice=$(get_input "请输入选项 [0-4]: ")
+        choice=$(get_input "请输入选项 [0-5]: ")
 
         case $choice in
             1)
@@ -451,6 +496,9 @@ main() {
                 ;;
             4)
                 update_single "$base_url"
+                ;;
+            5)
+                update_self "$base_url"
                 ;;
             0)
                 clear
