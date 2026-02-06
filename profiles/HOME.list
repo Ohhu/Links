@@ -12,3 +12,10 @@ IP-CIDR,192.168.31.0/24,no-resolve
 
 # > Memos
 DOMAIN,memo.54894426.xyz
+
+# > SelfHost
+DOMAIN,memo.vsiu.cc
+DOMAIN,cpa.vsiu.cc
+DOMAIN,nas.vsiu.cc
+DOMAIN,bw.vsiu.cc
+DOMAIN,sub.vsiu.cc
