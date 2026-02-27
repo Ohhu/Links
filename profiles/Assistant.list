@@ -23,9 +23,6 @@ DOMAIN,runanytime.hxi.me
 DOMAIN,wzw.pp.ua
 DOMAIN,wzw.de5.net
 
-# > 无言
-DOMAIN,aiai.li
-
 # > That API
 # DOMAIN,gyapi.zxiaoruan.cn
 
@@ -49,9 +46,13 @@ DOMAIN-SUFFIX,fengyeai.chat
 
 # > Hotaru
 DOMAIN,api.hotaruapi.top
+DOMAIN-SUFFIX,hotaruapi.com
 
 # > anyrouter
 DOMAIN-SUFFIX,anyrouter.top
+
+# > AidRouter
+DOMAIN,aidrouter.qzz.io
 
 # > Flow
 DOMAIN-SUFFIX,labs.google
