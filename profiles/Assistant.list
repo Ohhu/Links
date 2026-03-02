@@ -54,5 +54,8 @@ DOMAIN-SUFFIX,anyrouter.top
 # > AidRouter
 DOMAIN,aidrouter.qzz.io
 
+# > Mo
+DOMAIN,api.268526.eu.cc
+
 # > Flow
 DOMAIN-SUFFIX,labs.google
