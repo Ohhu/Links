@@ -62,5 +62,8 @@ DOMAIN,navix.site
 # > linuxdo
 DOMAIN-SUFFIX,linux.do
 
+# > LD士多
+DOMAIN-SUFFIX,ldspro.qzz.io
+
 # > v2ex
 DOMAIN-SUFFIX,v2ex.com
