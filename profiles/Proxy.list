@@ -62,9 +62,16 @@ DOMAIN,navix.site
 # > linuxdo
 DOMAIN-SUFFIX,linux.do
 
+# > 免费二级域名
+DOMAIN-SUFFIX,eu.cc
+DOMAIN-SUFFIX,cc.cd
+DOMAIN-SUFFIX,qzz.io
+DOMAIN-SUFFIX,pp.ua
+DOMAIN-SUFFIX,de5.net
+
 # > LD士多
-DOMAIN-SUFFIX,ldspro.qzz.io
-DOMAIN-SUFFIX,ldstore.cc.cd
+# DOMAIN-SUFFIX,ldspro.qzz.io
+# DOMAIN-SUFFIX,ldstore.cc.cd
 
 # > v2ex
 DOMAIN-SUFFIX,v2ex.com

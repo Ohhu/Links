@@ -20,8 +20,8 @@ DOMAIN,kfc-api.sxxe.net
 DOMAIN,runanytime.hxi.me
 
 # > WONG
-DOMAIN,wzw.pp.ua
-DOMAIN,wzw.de5.net
+# DOMAIN,wzw.pp.ua
+# DOMAIN,wzw.de5.net
 
 # > That API
 # DOMAIN,gyapi.zxiaoruan.cn
@@ -52,16 +52,16 @@ DOMAIN-SUFFIX,hotaruapi.com
 DOMAIN-SUFFIX,anyrouter.top
 
 # > AidRouter
-DOMAIN,aidrouter.qzz.io
+# DOMAIN,aidrouter.qzz.io
 
 # > Mo
-DOMAIN,api.268526.eu.cc
+# DOMAIN,api.268526.eu.cc
 
 # > 佬友
-DOMAIN-SUFFIX,freestyle.cc.cd
+# DOMAIN-SUFFIX,freestyle.cc.cd
 
 # > Hello AI
-DOMAIN-SUFFIX,xhyun.eu.cc
+# DOMAIN-SUFFIX,xhyun.eu.cc
 
 # > Flow
 DOMAIN-SUFFIX,labs.google
