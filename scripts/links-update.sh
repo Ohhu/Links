@@ -21,7 +21,7 @@ PROFILES_DIR="${PROJECT_ROOT}/rules/Ohhu"    # Profiles 文件存放目录
 SNIPPETS_DIR="${PROJECT_ROOT}/snippets"     # Snippets 文件存放目录
 
 # 文件定义
-PROFILES_FILES="AdJust.list Assistant.list DIRECT.list HOME.list Proxy.list REJECT.list"
+PROFILES_FILES="AdJust.list Assistant.list DIRECT.list HOME.list Manual.list Proxy.list REJECT.list"
 SNIPPETS_FILES="groups.toml rulesets.toml"
 SCRIPT_NAME="links-update.sh"
 
@@ -231,12 +231,13 @@ show_file_menu() {
     echo -e "  ${GREEN}2)${NC} Assistant.list"
     echo -e "  ${GREEN}3)${NC} DIRECT.list"
     echo -e "  ${GREEN}4)${NC} HOME.list"
-    echo -e "  ${GREEN}5)${NC} Proxy.list"
-    echo -e "  ${GREEN}6)${NC} REJECT.list"
+    echo -e "  ${GREEN}5)${NC} Manual.list"
+    echo -e "  ${GREEN}6)${NC} Proxy.list"
+    echo -e "  ${GREEN}7)${NC} REJECT.list"
     echo ""
     echo -e "${BLUE}Snippets (配置片段):${NC}"
-    echo -e "  ${GREEN}7)${NC} groups.toml"
-    echo -e "  ${GREEN}8)${NC} rulesets.toml"
+    echo -e "  ${GREEN}8)${NC} groups.toml"
+    echo -e "  ${GREEN}9)${NC} rulesets.toml"
     echo ""
     echo -e "  ${RED}0)${NC} 返回主菜单"
     echo ""
@@ -321,7 +322,7 @@ update_single() {
 
     while true; do
         show_file_menu
-        choice=$(get_input "请输入选项 [0-8]: ")
+        choice=$(get_input "请输入选项 [0-9]: ")
 
         case $choice in
             0)
@@ -344,18 +345,22 @@ update_single() {
                 category="profiles"
                 ;;
             5)
-                filename="Proxy.list"
+                filename="Manual.list"
                 category="profiles"
                 ;;
             6)
-                filename="REJECT.list"
+                filename="Proxy.list"
                 category="profiles"
                 ;;
             7)
+                filename="REJECT.list"
+                category="profiles"
+                ;;
+            8)
                 filename="groups.toml"
                 category="snippets"
                 ;;
-            8)
+            9)
                 filename="rulesets.toml"
                 category="snippets"
                 ;;

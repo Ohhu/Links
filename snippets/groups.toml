@@ -24,6 +24,11 @@ type = "select"
 rule = ['[]💐 HongKong', '[]🏵 Singapore', '[]🍀 Taiwan', '[]🌸 Japan', '[]🍉 Korea', '[]🌺 SelfHost', '[]🌹 U.S.', '[]☀️ DIRECT', '^(?!自建\s+\|)[^\d].*']
 
 [[custom_groups]]
+name = '🧩 Manual'
+type = "select"
+rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]💐 HongKong', '[]🏵 Singapore', '[]🍀 Taiwan', '[]🌸 Japan', '[]🍉 Korea', '[]🌺 SelfHost', '[]🌹 U.S.']
+
+[[custom_groups]]
 name = '⚡️ Google'
 type = "select"
 rule = ['[]💐 HongKong', '[]🍀 Taiwan', '[]🍉 Korea', '[]🌸 Japan', '[]🏵 Singapore', '[]🌺 SelfHost', '[]🌹 U.S.', '[]🍭 Proxy', '^(?!自建\s+\|)[^\d冷].*']

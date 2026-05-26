@@ -7,6 +7,10 @@ group = "DIRECT"
 ruleset = "rules/Ohhu/DIRECT.list"
 
 [[rulesets]]
+group = "🧩 Manual"
+ruleset = "rules/Ohhu/Manual.list"
+
+[[rulesets]]
 group = "☯ AdJust"
 ruleset = "rules/Ohhu/AdJust.list"
 
