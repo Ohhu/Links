@@ -1,0 +1,22 @@
+version = 1
+
+[custom]
+enable_rule_generator = true
+overwrite_original_rules = false
+
+# Use the local base template and local snippets mounted into the container.
+clash_rule_base = "base/all_base.tpl"
+surge_rule_base = "base/all_base.tpl"
+surfboard_rule_base = "base/all_base.tpl"
+mellow_rule_base = "base/all_base.tpl"
+quan_rule_base = "base/all_base.tpl"
+quanx_rule_base = "base/all_base.tpl"
+loon_rule_base = "base/all_base.tpl"
+sssub_rule_base = "base/all_base.tpl"
+singbox_rule_base = "base/all_base.tpl"
+
+[[custom_groups]]
+import = "snippets/groups.toml"
+
+[[rulesets]]
+import = "snippets/rulesets.toml"
