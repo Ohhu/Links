@@ -24,7 +24,7 @@ DOMAIN,runanytime.hxi.me
 # DOMAIN,wzw.de5.net
 
 # > That API
-# DOMAIN,gyapi.zxiaoruan.cn
+DOMAIN-SUFFIX,zxiaoruan.cn
 
 # > Elysiver
 DOMAIN,elysiver.h-e.top
@@ -68,3 +68,6 @@ DOMAIN-SUFFIX,labs.google
 
 # > muyuan
 DOMAIN-SUFFIX,muyuan.do
+
+# > QQ
+DOMAIN-SUFFIX,abrdns.com
