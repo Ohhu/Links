@@ -6,84 +6,132 @@
 # 判断域名：DOMAIN
 # 域名后缀：DOMAIN-SUFFIX
 # 关键词：DOMAIN-KEYWORD
+# 分组规则：Emoji 在前，字母备注在后按字母排序，分组间空一行
 
-# > Emby
-DOMAIN-SUFFIX,tanhuatv.site
 # 🐚
 DOMAIN,yinhai.aiinyue.com
-# HKA
-DOMAIN-SUFFIX,aliz.work
-# MSKY
-DOMAIN-SUFFIX,5msky.com
+
 # 🍉
 DOMAIN-SUFFIX,chilledmelon.com
 # DOMAIN-SUFFIX,1024.one
 # DOMAIN-SUFFIX,1024.name
 # DOMAIN-SUFFIX,wm.atto.moe
 # DOMAIN-SUFFIX,daigua.j8.work
+
 # 🐝
 DOMAIN-SUFFIX,28.al
 DOMAIN-SUFFIX,beebi.org
+
 # 🍃
 DOMAIN-SUFFIX,gm.yezi.my
 DOMAIN-SUFFIX,lyezi.cc
+
 # 🤖
 # DOMAIN-SUFFIX,rjf37.com
 DOMAIN-SUFFIX,xytx.org
 DOMAIN-SUFFIX,okemby.org
+
 # 🦅
 # DOMAIN-SUFFIX,emby1.123456789.lol
 # DOMAIN-SUFFIX,emby2.9900990.buzz
+
 # 🦆
 DOMAIN-SUFFIX,emby.bangumi.ca
+
 # 📖
 DOMAIN-SUFFIX,wenjian.de
 DOMAIN-SUFFIX,hsu.life
+
 # ▶️
 DOMAIN-SUFFIX,3767483.xyz
+
 # 🎃
 DOMAIN-SUFFIX,nangua.de
 DOMAIN-SUFFIX,tufei.de
+
 # 🃏
 DOMAIN-SUFFIX,younoyes.com
+
 # 👹
 DOMAIN-SUFFIX,shrekmedia.org
+
 # 🌈
 DOMAIN-SUFFIX,feiyue.lol
+
 # 🥮
 DOMAIN-SUFFIX,emby.my
+
 # 🐄
 #DOMAIN-SUFFIX,feiniu.lol
+
 # 🐻
 DOMAIN-SUFFIX,mebimmer.de
-# FWorks
-DOMAIN,fworks-emby.webn.cc
-# 一之濑琴美的电视台
-DOMAIN-SUFFIX,191920.xyz
-# Nanflix
-DOMAIN,us.nanflix.net
-# jingzhe
-DOMAIN-SUFFIX,jingzhe.pro
+
+# 🐰
+DOMAIN-SUFFIX,ciallo.party
+DOMAIN-SUFFIX,yuanshen.help
+
 # 🌳
 DOMAIN-SUFFIX,empn.mom
-# hohai
-DOMAIN-SUFFIX,hohai.eu.org
+
 # 🍁
 # DOMAIN-SUFFIX,sakuraikaede.com
+
 # 👨‍🍳
 DOMAIN,emby.605305.xyz
+
+# 🐣
+DOMAIN-SUFFIX,sadchicktv.com
+
+# 😼
+DOMAIN-SUFFIX,zzm.li
+
+# 飞猫
+DOMAIN-SUFFIX,meowfly.de
+
+# 一之濑琴美的电视台
+DOMAIN-SUFFIX,ichinosekotomi.com
+
+# 游骑兵
+DOMAIN,emby.heisi.org
+
 # E
 DOMAIN,embyty.entertang.work
-# ovo
-DOMAIN,nay.007.us.kg
+
+# Emby
+DOMAIN-SUFFIX,tanhuatv.site
+
+# FWorks
+DOMAIN,fworks-emby.webn.cc
+
 # HG
-DOMAIN,emby.dnscf.dpdns.org
+DOMAIN-SUFFIX,hgemby.qzz.io
+DOMAIN-SUFFIX,111660.xyz
+
+# HKA
+DOMAIN-SUFFIX,aliz.work
+
+# hohai
+DOMAIN-SUFFIX,hohai.eu.org
+
+# jingzhe
+DOMAIN-SUFFIX,jingzhe.pro
+
 # Mirai
 DOMAIN-SUFFIX,jiedaibao.gs
 DOMAIN-SUFFIX,miraiemby.com
-# 🐣
-DOMAIN-SUFFIX,sadchicktv.com
-# > soop
+
+# MSKY
+DOMAIN-SUFFIX,5msky.com
+
+# Nanflix
+DOMAIN,us.nanflix.net
+
+# ovo
+DOMAIN,nay.007.us.kg
+
+# soop
 DOMAIN-SUFFIX,sooplive.com
-# 😼
-DOMAIN-SUFFIX,zzm.li
+
+# WE
+DOMAIN-SUFFIX,wedg.top
