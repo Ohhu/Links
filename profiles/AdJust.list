@@ -9,7 +9,7 @@
 # 分组规则：Emoji 在前，字母备注在后按字母排序，分组间空一行
 
 # 🐚
-DOMAIN,yinhai.aiinyue.com
+# DOMAIN,yinhai.aiinyue.com
 
 # 🍉
 DOMAIN-SUFFIX,chilledmelon.com
