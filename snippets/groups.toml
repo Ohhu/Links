@@ -177,7 +177,7 @@ interval = 400
 [[custom_groups]]
 name = '🪻 url-test'
 type = "url-test"
-rule = ['^(?!.*自建\s+\|).*枫\s*\|\s*香港\s+HKBN\b.*?[x\d\)]$']
+rule = ['^(?!.*自建\s+\|)(?!.*直连).*枫\s*\|\s*香港\s+HKBN\b.*?[x\d\)]$']
 url = 'http://www.gstatic.com/generate_204'
 interval = 400
 
