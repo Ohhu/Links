@@ -23,6 +23,10 @@ group = "DIRECT"
 ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list"
 
 [[rulesets]]
+group = "🌌 Assistant"
+ruleset = "rules/Ohhu/Assistant.list"
+
+[[rulesets]]
 group = "💥 ADban"
 ruleset = "rules/Ohhu/REJECT.list"
 
@@ -45,10 +49,6 @@ ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Goog
 [[rulesets]]
 group = "💫 FCM"
 ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleCN.list"
-
-[[rulesets]]
-group = "🌌 Assistant"
-ruleset = "rules/Ohhu/Assistant.list"
 
 [[rulesets]]
 group = "🌌 Assistant"
