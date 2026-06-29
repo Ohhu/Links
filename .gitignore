@@ -25,3 +25,6 @@ Temporary Items
 # Claude Code custom instructions
 claude.md
 .claude/
+
+# Local node list for regex testing
+node.list
