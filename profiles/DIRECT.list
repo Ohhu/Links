@@ -72,3 +72,6 @@ DOMAIN,a10.zeabur.app
 
 # > betterclau
 DOMAIN-SUFFIX,betterclau.de
+
+# > openxlab
+DOMAIN-SUFFIX,openxlab.org.cn
