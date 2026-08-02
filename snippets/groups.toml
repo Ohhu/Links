@@ -7,7 +7,8 @@
 #   各分组内节点引用统一序列（离中国近者在前）：
 #   🪻 Residential → 🥮 HongKong → 💐 HongKong → 🌼 Korea → 🍣 Japan
 #   → 🌸 Japan → 🏵 Singapore → 🧇 Germany → 🌺 SelfHost → 🍔 U.S. → 🌹 U.S.
-#   例外：⚡️ Google / ✨ YouTube / 💧 Telegram 中 []🌺 SelfHost 置顶
+#   例外：⚡️ Google / ✨ YouTube / 💧 Telegram / 🍭 Proxy 中 []🌺 SelfHost 置顶
+#   ☯ AdJust 中 []🌺 SelfHost 紧随 []🍭 Proxy 之后
 #   []☀️ DIRECT、[]🍭 Proxy 保持各分组原位不动，正则规则保持在序列末尾
 #
 # 二、国家块区（中部 select 分组 + 底部 url-test 分组）
@@ -22,7 +23,7 @@
 [[custom_groups]]
 name = '☯ AdJust'
 type = "select"
-rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]🪻 Residential', '[]🥮 HongKong', '[]💐 HongKong', '[]🌼 Korea', '[]🍣 Japan', '[]🌸 Japan', '[]🏵 Singapore', '[]🧇 Germany', '[]🌺 SelfHost', '[]🍔 U.S.', '[]🌹 U.S.', '^(?!.*自建\s*\|).*?[1-9]\.\dx$']
+rule = ['[]☀️ DIRECT', '[]🍭 Proxy', '[]🌺 SelfHost', '[]🪻 Residential', '[]🥮 HongKong', '[]💐 HongKong', '[]🌼 Korea', '[]🍣 Japan', '[]🌸 Japan', '[]🏵 Singapore', '[]🧇 Germany', '[]🍔 U.S.', '[]🌹 U.S.', '^(?!.*自建\s*\|).*?[1-9]\.\dx$']
 
 [[custom_groups]]
 name = '💧 Telegram'
@@ -42,7 +43,7 @@ rule = ['[]🪻 Residential', '[]🥮 HongKong', '[]💐 HongKong', '[]🌼 Kore
 [[custom_groups]]
 name = '🍭 Proxy'
 type = "select"
-rule = ['[]🪻 Residential', '[]🥮 HongKong', '[]💐 HongKong', '[]🌼 Korea', '[]🍣 Japan', '[]🌸 Japan', '[]🏵 Singapore', '[]🧇 Germany', '[]🌺 SelfHost', '[]🍔 U.S.', '[]🌹 U.S.', '[]☀️ DIRECT', '^(?!.*自建\s*\|)[^\d].*']
+rule = ['[]🌺 SelfHost', '[]🪻 Residential', '[]🥮 HongKong', '[]💐 HongKong', '[]🌼 Korea', '[]🍣 Japan', '[]🌸 Japan', '[]🏵 Singapore', '[]🧇 Germany', '[]🍔 U.S.', '[]🌹 U.S.', '[]☀️ DIRECT', '^(?!.*自建\s*\|)[^\d].*']
 
 [[custom_groups]]
 name = '🧩 Manual'
