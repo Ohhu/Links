@@ -211,10 +211,10 @@ show_main_menu() {
 
     echo -e "${YELLOW}请选择操作:${NC}"
     echo ""
-    echo -e "  ${GREEN}1)${NC} 更新所有文件"
+    echo -e "  ${GREEN}1)${NC} 更新指定文件"
     echo -e "  ${GREEN}2)${NC} 更新 Profiles（规则列表）"
     echo -e "  ${GREEN}3)${NC} 更新 Snippets（配置片段）"
-    echo -e "  ${GREEN}4)${NC} 更新单个文件"
+    echo -e "  ${GREEN}4)${NC} 更新所有文件"
     echo -e "  ${GREEN}5)${NC} 更新脚本自身"
     echo -e "  ${RED}0)${NC} 退出"
     echo ""
@@ -224,7 +224,7 @@ show_main_menu() {
 show_file_menu() {
     clear
     print_title
-    echo -e "${YELLOW}选择要更新的文件:${NC}"
+    echo -e "${YELLOW}选择要更新的文件（输入编号，多个用空格或逗号分隔）:${NC}"
     echo ""
     echo -e "${BLUE}Profiles (规则列表):${NC}"
     echo -e "  ${GREEN}1)${NC} AdJust.list"
@@ -240,6 +240,8 @@ show_file_menu() {
     echo -e "  ${GREEN}9)${NC} rulesets.toml"
     echo ""
     echo -e "  ${RED}0)${NC} 返回主菜单"
+    echo ""
+    log_info "提示: 可多选文件，编号用空格或逗号分隔，例如: 1 3 5 或 1,3,5"
     echo ""
 }
 
@@ -316,66 +318,100 @@ update_snippets() {
     wait_key
 }
 
-# 更新单个文件
-update_single() {
+# 更新指定文件（支持多选，用空格或逗号分隔）
+update_specific() {
     local base_url=$1
 
     while true; do
         show_file_menu
-        choice=$(get_input "请输入选项 [0-9]: ")
 
-        case $choice in
-            0)
-                return
-                ;;
-            1)
-                filename="AdJust.list"
-                category="profiles"
-                ;;
-            2)
-                filename="Assistant.list"
-                category="profiles"
-                ;;
-            3)
-                filename="DIRECT.list"
-                category="profiles"
-                ;;
-            4)
-                filename="HOME.list"
-                category="profiles"
-                ;;
-            5)
-                filename="Manual.list"
-                category="profiles"
-                ;;
-            6)
-                filename="Proxy.list"
-                category="profiles"
-                ;;
-            7)
-                filename="REJECT.list"
-                category="profiles"
-                ;;
-            8)
-                filename="groups.toml"
-                category="snippets"
-                ;;
-            9)
-                filename="rulesets.toml"
-                category="snippets"
-                ;;
-            *)
-                log_error "无效的选项，请重新输入"
-                sleep 1
-                continue
-                ;;
-        esac
+        # 读取用户输入（允许输入多个编号，用空格或逗号分隔）
+        local input
+        echo -ne "${CYAN}请输入文件编号（多个用空格或逗号分隔，如: 1 3 5）:${NC}" >&2
+        read -r input
 
-        # 执行更新
+        # 将逗号统一替换为空格，保证按 IFS 正确分割，避免转义歧义
+        input=$(printf '%s' "$input" | tr ',' ' ')
+
+        # 用 read -a 安全分割为数组（不会做通配符展开，防止误匹配文件名）
+        local -a tokens
+        read -ra tokens <<< "$input"
+
+        if [ "${#tokens[@]}" -eq 0 ]; then
+            log_error "未输入任何选项，请重新输入"
+            sleep 1
+            continue
+        fi
+
+        # 校验输入只能为数字，拒绝其他字符（防止通配符/命令注入）
+        local bad_input=0
+        local token
+        for token in "${tokens[@]}"; do
+            case "$token" in
+                ''|*[!0-9]*)
+                    log_error "无效输入: ${token}（只能输入数字，用空格或逗号分隔）"
+                    bad_input=1
+                    ;;
+            esac
+        done
+
+        if [ "$bad_input" = 1 ]; then
+            sleep 1
+            continue
+        fi
+
+        # 输入中包含 0 则返回主菜单
+        local back_requested=0
+        for token in "${tokens[@]}"; do
+            if [ "$token" = "0" ]; then
+                back_requested=1
+                break
+            fi
+        done
+
+        if [ "$back_requested" = 1 ]; then
+            return
+        fi
+
+        # 将编号映射为文件名与分类（文件名均为固定值，变量一律加双引号防转义）
+        local -a selected_names=()
+        local -a selected_cats=()
+        for token in "${tokens[@]}"; do
+            local fname=""
+            local fcat=""
+            case "$token" in
+                1) fname="AdJust.list";    fcat="profiles" ;;
+                2) fname="Assistant.list"; fcat="profiles" ;;
+                3) fname="DIRECT.list";    fcat="profiles" ;;
+                4) fname="HOME.list";      fcat="profiles" ;;
+                5) fname="Manual.list";    fcat="profiles" ;;
+                6) fname="Proxy.list";     fcat="profiles" ;;
+                7) fname="REJECT.list";    fcat="profiles" ;;
+                8) fname="groups.toml";    fcat="snippets" ;;
+                9) fname="rulesets.toml";  fcat="snippets" ;;
+                *) log_error "无效选项: ${token}"; continue ;;
+            esac
+            if [ -n "$fname" ]; then
+                selected_names+=("$fname")
+                selected_cats+=("$fcat")
+            fi
+        done
+
+        local count=${#selected_names[@]}
+        if [ "$count" -eq 0 ]; then
+            log_error "未选择任何有效文件，请重新输入"
+            sleep 1
+            continue
+        fi
+
+        # 显示待更新文件并逐个下载更新
         reset_counters
-
         echo ""
-        echo -e "${YELLOW}将要更新: ${CYAN}${filename}${NC}"
+        echo -e "${YELLOW}将要更新 ${count} 个文件:${NC}"
+        local i
+        for ((i = 0; i < count; i++)); do
+            echo -e "  ${CYAN}${selected_names[$i]}${NC}（${selected_cats[$i]}）"
+        done
         echo ""
 
         if [ "$USE_CDN" = true ]; then
@@ -385,24 +421,23 @@ update_single() {
         fi
         echo ""
 
-        log_info "开始更新 ${filename}..."
-        echo ""
+        for ((i = 0; i < count; i++)); do
+            local name="${selected_names[$i]}"
+            local cat="${selected_cats[$i]}"
 
-        if download_file "$filename" "$category" "$base_url"; then
-            SUCCESS_COUNT=1
-            local file_path="$(get_target_dir "$category")/${filename}"
-
+            log_info "开始更新 ${name}..."
+            if download_file "$name" "$cat" "$base_url"; then
+                SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
+            else
+                FAIL_COUNT=$((FAIL_COUNT + 1))
+                if [ -z "$FAILED_FILES" ]; then
+                    FAILED_FILES="$name"
+                else
+                    FAILED_FILES="$FAILED_FILES $name"
+                fi
+            fi
             echo ""
-            print_separator
-            echo -e "${YELLOW}文件内容预览: ${CYAN}${filename}${NC}"
-            print_separator
-            cat "$file_path"
-            echo ""
-            print_separator
-        else
-            FAIL_COUNT=1
-            FAILED_FILES="$filename"
-        fi
+        done
 
         print_summary
         wait_key
@@ -497,7 +532,7 @@ main() {
 
         case $choice in
             1)
-                update_all "$base_url"
+                update_specific "$base_url"
                 ;;
             2)
                 update_profiles "$base_url"
@@ -506,7 +541,7 @@ main() {
                 update_snippets "$base_url"
                 ;;
             4)
-                update_single "$base_url"
+                update_all "$base_url"
                 ;;
             5)
                 update_self "$base_url"
