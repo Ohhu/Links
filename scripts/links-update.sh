@@ -241,7 +241,7 @@ show_file_menu() {
     echo ""
     echo -e "  ${RED}0)${NC} 返回主菜单"
     echo ""
-    log_info "提示: 可多选文件，编号用空格或逗号分隔，例如: 1 3 5 或 1,3,5"
+    log_info "可多选文件，编号用空格或逗号分隔"
     echo ""
 }
 
@@ -327,7 +327,7 @@ update_specific() {
 
         # 读取用户输入（允许输入多个编号，用空格或逗号分隔）
         local input
-        echo -ne "${CYAN}请输入文件编号（多个用空格或逗号分隔，如: 1 3 5）:${NC}" >&2
+        echo -ne "${CYAN}请输入文件编号:${NC}" >&2
         read -r input
 
         # 将逗号统一替换为空格，保证按 IFS 正确分割，避免转义歧义
