@@ -12,3 +12,6 @@ DOMAIN-SUFFIX,hybgzs.com
 
 # > 薄荷
 DOMAIN,x666.me
+
+# > Custom IP
+IP-CIDR,69.63.223.126/32
